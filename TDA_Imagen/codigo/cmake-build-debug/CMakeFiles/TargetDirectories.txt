@@ -1,0 +1,5 @@
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/cmake-build-debug/CMakeFiles/image.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/cmake-build-debug/CMakeFiles/negativo.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/cmake-build-debug/CMakeFiles/doc_doxygen.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/cmake-build-debug/CMakeFiles/rebuild_cache.dir
