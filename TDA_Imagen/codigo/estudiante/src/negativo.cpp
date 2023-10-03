@@ -1,6 +1,22 @@
-// Fichero: negativo.cpp
-// Calcula el negativo de una imagen PGM
-//
+/**
+ * @file negativo.cpp
+ * @brief Calcula el negativo de una imagen PGM
+ *
+ * Este programa calcula el negativo de una imagen PGM y toma tres parámetros de entrada:
+ * 1. El nombre del programa (por convención).
+ * 2. El nombre del archivo de entrada que contiene la imagen PGM original.
+ * 3. El nombre del archivo de salida donde se guardará la imagen PGM negativa.
+ *
+ * EG: ~$ ./negativo ./[ArchivosEntrada]/[ImagenEntrada].pmg ./[CarpetaSalida]/[ImagenSalida].pgm
+ *
+ * @param argc Número de argumentos de línea de comandos (debe ser 3).
+ * @param argv Arreglo de cadenas que contiene los argumentos de línea de comandos.
+ * @return Devuelve 0 si la operación se realizó con éxito, o un valor diferente si hubo un error.
+ *
+ * @note Este programa escribirá la imagen negativa  de la imagen de entrada @p argv [0]
+ *       en el archivo de salida especificado. @p argv [1]
+ */
+
 
 #include <iostream>
 #include <cstring>

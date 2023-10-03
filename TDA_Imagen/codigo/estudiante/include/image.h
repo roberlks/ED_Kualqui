@@ -32,9 +32,9 @@ enum LoadResult: unsigned char {
 
   \#include <Imagen.h>
 
-  @author Javier Abad
-  @author Guillermo Gómez
-  @date Septiembre 2021
+  @author Roberto González
+  @author Irina Kuzyshyn
+  @date Octubre 2023
 
 **/
 
