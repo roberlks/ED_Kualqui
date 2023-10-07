@@ -79,7 +79,7 @@ private :
     /**
       @brief Initialize una imagen.
       @param nrows Número de filas que tendrá la imagen. Por defecto, 0
-      @param ncols Número de colwnnas que tendrá la imagen. Por defecto, 0
+      @param ncols Número de columnnas que tendrá la imagen. Por defecto, 0
       @param buffer Puntero a un buffer de datos con los que rellenar los píxeles de la imagen. Por defecto, 0.
       @pre filas >= O y columnas >= O
       @post Reserva memoria para almacenar la imagen y la prepara para usarse.
@@ -147,7 +147,7 @@ public :
     Image (const Image & orig);
 
     /**
-      * @brief Oper ador de tipo destructor.
+      * @brief Operador de tipo destructor.
       * @return void
       * @post El objeto Imagen destruido no puede usarse salvo que se haga sobre él una operacion Imagen().
       */
@@ -200,7 +200,7 @@ public :
   * @post El píxel (@p i, @p j) de la imagen se modificará y contendrá valor @p value.
   * Los demás píxeles permanecerán iguales.
   */
-void set_pixel (int i, int j, byte value);
+    void set_pixel (int i, int j, byte value);
 
     /**
       * @brief Consulta el valor del píxel (fil, col) de la imagen.
