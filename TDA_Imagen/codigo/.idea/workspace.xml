@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b88400f-23f0-40fb-b479-ee3f5aa5bfd9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/estudiante/include/image.h" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/include/image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,6 +79,11 @@
         <aux-dir>$USER_HOME$</aux-dir>
       </texify-bibtex>
       <method v="2" />
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
     </configuration>
     <configuration name="doc_doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="doc_doxygen" CONFIG_NAME="Debug">
       <method v="2">
@@ -150,7 +155,7 @@
       <workItem from="1696324781632" duration="598000" />
       <workItem from="1696325403745" duration="3270000" />
       <workItem from="1696339134317" duration="1609000" />
-      <workItem from="1696694447926" duration="526000" />
+      <workItem from="1696694447926" duration="694000" />
     </task>
     <servers />
   </component>
