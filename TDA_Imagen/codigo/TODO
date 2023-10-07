@@ -1,0 +1,28 @@
+TO DO:
+    - Arreglar los TODOS del archivo image.cpp
+    - Implementar metodos no implementados en image.h
+        - bool Empty () const;
+        - Image(int nrows, int ncols, byte value=0);
+        - Metodos correspondientes a las practicas:
+                // Invierte
+                - void Invert();
+
+                // Modifica el contraste de una Imagen .
+                - void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
+
+                // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+                double Mean (int i, int j, int height, int width) const;
+
+                // Genera un icono como reducción de una imagen.
+                - Image Subsample(int factor) const;
+
+                // Genera una subimagen.
+                - Image Crop(int nrow, int ncol, int height, int width) const;
+
+                // Genera una imagen aumentada 2x.
+                - Image Zoom2X() const;
+
+
+
+                // Baraja pseudoaleatoriamente las filas de una imagen.
+                - void ShuffleRows();
