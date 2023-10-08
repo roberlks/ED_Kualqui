@@ -248,17 +248,21 @@ public :
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+      * @brief Invierte esta imagen.
+      * @pre La imagen no está vacía.
+      * @post La imagen se vuelve en negativo y se queda guardada en el mismo objeto.
+      */
     void Invert();
 
     // Modifica el contraste de una Imagen .
-    void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
+    void AdjustContrast (byte in1, byte in2, byte out1, byte out2); //ROB
 
     // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.
-    Image Subsample(int factor) const;
+    Image Subsample(int factor) const; //ROB
 
     // Genera una subimagen.
     Image Crop(int nrow, int ncol, int height, int width) const;
@@ -269,7 +273,7 @@ public :
 
 
     // Baraja pseudoaleatoriamente las filas de una imagen.
-    void ShuffleRows();
+    void ShuffleRows(); //ROB
 } ;
 
 

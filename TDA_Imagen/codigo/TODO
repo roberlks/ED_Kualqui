@@ -1,5 +1,6 @@
 TO DO:
     - Arreglar los TODOS del archivo image.cpp
+        - DUDA: set_pixel, get_pixel
     - Implementar metodos no implementados en image.h
         - bool Empty () const;
         - Image(int nrows, int ncols, byte value=0);
