@@ -255,17 +255,34 @@ public :
       */
     bool Load (const char * file_path);
 
-    // Invierte
+    /**
+      * @brief Invierte esta imagen.
+      * @pre La imagen no está vacía.
+      * @post La imagen se vuelve en negativo y se queda guardada en el mismo objeto.
+      */
     void Invert();
 
-    // Modifica el contraste de una Imagen .
-    void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
+
+    /**
+     *
+     * @brief Modifica el contraste de una imagen.
+     * @param in1 Umbral inferior de la imagen de entrada
+     * @param in2 Umbral superior de la imagen de entrada
+     * @param out1 Umbral inferior de la imagen de salida
+     * @param out2 Umbral superior de la imagen de salida
+     * @pre 0 <= (in1, in2, out1, out2) <= 255
+     * @pre in1 < in2
+     * @pre out1 < out2
+     *
+     * @post El objeto que llama a la función es modificado
+     */
+    void AdjustContrast (byte in1, byte in2, byte out1, byte out2); //ROB
 
     // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.
-    Image Subsample(int factor) const;
+    Image Subsample(int factor) const; //ROB
 
     // Genera una subimagen.
     Image Crop(int nrow, int ncol, int height, int width) const;
@@ -275,8 +292,18 @@ public :
 
 
 
-    // Baraja pseudoaleatoriamente las filas de una imagen.
-    void ShuffleRows();
+    /**
+     *
+     * @brief Baraja pseudoaleatoriamente las filas de una imagen.
+     * @pre rows < 9973
+     * @post EL objeto que llama al método contiene ahora una nueva imagen igual
+     * que la anterior, pero con las filas ordenadas según el siguiente algoritmo:
+     * \f[
+     * \overset{^}{r} = (r \cdot p) % rows
+     * \f]
+     */
+
+    void ShuffleRows(); //ROB
 } ;
 
 

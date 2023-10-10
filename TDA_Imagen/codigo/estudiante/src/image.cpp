@@ -138,18 +138,23 @@ byte Image::get_pixel (int i, int j) const {
     return img[i][j];
 }
 
-// This doesn't work if representation changes
 void Image::set_pixel (int k, byte value) {
-    // TODO this makes assumptions about the internal representation
-    // TODO Can you reuse set_pixel(i,j,value)?
-    img[0][k] = value;
+    int fil, col;
+    // fil == num of times u can circle the col lenght of the array
+    fil = k/cols;
+    // col == the remainder of the division
+    col = k%cols;
+
+    set_pixel(fil, col, value);
 }
 
-// This doesn't work if representation changes
 byte Image::get_pixel (int k) const {
-    // TODO this makes assumptions about the internal representation
-    // TODO Can you reuse get_pixel(i,j)?
-    return img[0][k];
+    int fil, col;
+
+    fil = k/(this->get_cols());
+    col = k%(this->get_cols());
+
+    return get_pixel(fil, col);
 }
 
 // Métodos para almacenar y cargar imagenes en disco
@@ -159,6 +164,8 @@ bool Image::Save (const char * file_path) const {
 }
 
 
+
 byte& Image::get_dir_row(int k) const{
     return img[k];
 }
+
