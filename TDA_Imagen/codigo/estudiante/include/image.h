@@ -231,6 +231,13 @@ public :
     void set_pixel (int k, byte value);
 
     /**
+     * @brief Devuelve la dirección una fila
+     * @return La dirección de la k-ésima fila de la matriz
+     * @post La imagen no se modifica
+     */
+    byte& get_dir_row(int k) const;
+
+    /**
       * @brief Almacena imágenes en disco.
       * @param file_path Ruta donde se almacenará la imagen.
       * @pre file path debe ser una ruta válida donde almacenar el fichero de salida.
