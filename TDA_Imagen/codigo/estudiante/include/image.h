@@ -65,6 +65,11 @@ private :
     byte **img;
 
     /**
+     * @brief Un puntero apuntando a img[0][0]
+     */
+    byte *header;
+
+    /**
       @brief Número de filas de la imagen.
     **/
     int rows;
@@ -284,7 +289,18 @@ public :
     // Genera un icono como reducción de una imagen.
     Image Subsample(int factor) const; //ROB
 
-    // Genera una subimagen.
+
+    // ! No se si aqui deberia tener pre o apañarmelas en el metodo
+    // ! Revisar
+    /**
+     * @brief Genera una subimagen, una imagen recortada.
+     * @param nrow Fila inicial para recortar
+     * @param ncol Columna inicial para recortar
+     * @param height Numero de filas
+     * @param width Numero de columnas
+     * @return Imagen con el recorte
+     * @post El objeto que llama a la funcion no se modifica
+     */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     // Genera una imagen aumentada 2x.

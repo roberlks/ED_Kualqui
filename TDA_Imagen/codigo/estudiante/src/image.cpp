@@ -22,10 +22,14 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
 
     img = new byte * [rows];
 
-    if (buffer != 0)
+    if (buffer != 0) {
         img[0] = buffer;
-    else
+        header = buffer;
+    }
+    else{
         img[0] = new byte [rows * cols];
+        header = img[0];
+    }
 
     for (int i=1; i < rows; i++)
         img[i] = img[i-1] + cols;
@@ -55,7 +59,7 @@ bool Image::Empty() const{
 
 void Image::Destroy(){
     if (!Empty()){
-        delete [] img[0];
+        delete [] header;
         delete [] img;
     }
 }
@@ -140,10 +144,10 @@ byte Image::get_pixel (int i, int j) const {
 
 void Image::set_pixel (int k, byte value) {
     int fil, col;
-    // fil == num of times u can circle the col lenght of the array
-    fil = k/cols;
-    // col == the remainder of the division
-    col = k%cols;
+    // fil = num of times u can circle the col lenght of the array
+    fil = k/this->get_cols();
+    // col = the remainder of the division
+    col = k%this->get_cols();
 
     set_pixel(fil, col, value);
 }
@@ -159,7 +163,7 @@ byte Image::get_pixel (int k) const {
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    byte * p = this->get_dir();
+    byte * p = this->get_dir_row(0);
     return WritePGMImage(file_path, p, get_rows(), get_cols());
 }
 

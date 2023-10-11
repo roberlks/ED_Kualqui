@@ -20,6 +20,18 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 }
 
+Image Image::Crop(int nrow, int ncol, int height, int width) const{
+    Image cropped(height, width);
+
+    for (int i = 0; i < height; ++i){
+        for (int j = 0; j < width; ++j){
+            cropped.set_pixel(i, j, this->get_pixel(i+nrow, j+ncol));
+        }
+    }
+
+    return cropped;
+}
+
 void Image::ShuffleRows() {
     const int p = 9973;
     Image tmp(this->get_rows(), this->get_cols());
