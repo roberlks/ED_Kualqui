@@ -28,7 +28,7 @@ using namespace std;
 
 int main (int argc, char *argv[]){
  
-  char *origen, *destino; // nombres de los ficheros
+  char *origin, *destination; // nombres de los ficheros
   Image image;
 
   // Comprobar validez de la llamada
@@ -36,19 +36,20 @@ int main (int argc, char *argv[]){
     cerr << "Error: Numero incorrecto de parametros.\n";
     cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
     exit (1);
+    //! por que esto es exit y no return 
   }
 
   // Obtener argumentos
-  origen  = argv[1];
-  destino = argv[2];
+  origin  = argv[1];
+  destination = argv[2];
 
   // Mostramos argumentos
   cout << endl;
-  cout << "Fichero origen: " << origen << endl;
-  cout << "Fichero resultado: " << destino << endl;
+  cout << "Fichero origen: " << origin << endl;
+  cout << "Fichero resultado: " << destination << endl;
 
   // Leer la imagen del fichero de entrada
-  if (!image.Load(origen)){
+  if (!image.Load(origin)){
     cerr << "Error: No pudo leerse la imagen." << endl;
     cerr << "Terminando la ejecucion del programa." << endl;
     return 1;
@@ -56,16 +57,15 @@ int main (int argc, char *argv[]){
 
   // Mostrar los parametros de la Imagen
   cout << endl;
-  cout << "Dimensiones de " << origen << ":" << endl;
+  cout << "Dimensiones de " << origin << ":" << endl;
   cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
   // Calcular el negativo
-  for (int i=0; i<image.size(); i++)
-      image.set_pixel(i,255-image.get_pixel(i));
+  image.Invert();
 
   // Guardar la imagen resultado en el fichero
-  if (image.Save(destino))
-    cout  << "La imagen se guardo en " << destino << endl;
+  if (image.Save(destination))
+    cout  << "La imagen se guardo en " << destination << endl;
   else{
     cerr << "Error: No pudo guardarse la imagen." << endl;
     cerr << "Terminando la ejecucion del programa." << endl;

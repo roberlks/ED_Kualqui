@@ -11,7 +11,7 @@
 #include <image.h>
 #include <imageIO.h>
 
-using namespace std;
+//using namespace std;
 
 /********************************
       FUNCIONES PRIVADAS
@@ -163,13 +163,12 @@ byte Image::get_pixel (int k) const {
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    byte * p = this->get_dir_row(0);
+    byte * p = get_dir_row(0);
     return WritePGMImage(file_path, p, get_rows(), get_cols());
 }
 
 
-
-byte& Image::get_dir_row(int k) const{
+byte* Image::get_dir_row(int k) const{
     return img[k];
 }
 
