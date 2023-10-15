@@ -289,11 +289,11 @@ public :
      *
      * @brief Baraja pseudoaleatoriamente las filas de una imagen.
      * @pre rows < 9973
-     * @post EL objeto que llama al método contiene ahora una nueva imagen igual
+     * @post El objeto que llama al método contiene ahora una nueva imagen igual
      * que la anterior, pero con las filas ordenadas según el siguiente algoritmo:
      * \f[
      * \overset{^}{r} = (r \cdot p) % rows
-     * \f]
+     * \f]/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/Retos/SudokuKiller/Sudoku_basico
      */
 
     void ShuffleRows(); //ROB
