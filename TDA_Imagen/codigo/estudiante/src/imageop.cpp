@@ -49,7 +49,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
                 PixelRange = Rango::rango3;
             }
             else{
-                throw (std::invalid_argument);
+                throw invalid_argument();
                 return;
             }// z == this->get_pixel(i,j)
 
@@ -65,8 +65,8 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
                     //do smt3
                     break;
                 default:
-                    //wtf?
-                    throw (std::invalid_argument);
+                    //wtf? Aqui no llegas nunca lmao
+                    throw invalid_argument();
                     return;
 
             }
