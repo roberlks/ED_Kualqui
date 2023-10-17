@@ -168,4 +168,3 @@ bool Image::Save (const char * file_path) const {
 byte& Image::get_dir_row(int k) const{
     return img[k];
 }
-
