@@ -75,7 +75,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 }
 
-void Image::ShuffleRows() {
+void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA 
     const int p = 9973;
     Image tmp(this->get_rows(), this->get_cols());
     for (int r = 0; r < this->get_rows(); r++) {
