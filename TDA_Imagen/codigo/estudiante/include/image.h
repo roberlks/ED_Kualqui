@@ -65,6 +65,11 @@ private :
     byte **img;
 
     /**
+     * @brief Un puntero apuntando a img[0][0]
+     */
+    byte *header;
+
+    /**
       @brief Número de filas de la imagen.
     **/
     int rows;
@@ -97,7 +102,7 @@ private :
       @brief Copy una imagen .
       @param orig Referencia a la imagen original que vamos a copiar
       @pre Asume que no hay memoria reservada o se ha llamado antes a Destroy()
-      @pre Asume this != &orig
+      @pre Asume this != @p &orig
     **/
     void Copy(const Image &orig);
 
@@ -106,7 +111,7 @@ private :
       @param nrows Número de filas que tendrá la imagen.
       @param ncols Número de colwnnas que tendrá la imagen.
       @param buffer Puntero a un buffer de datos con los que rellenar los píxeles de la imagen. Por defecto, 0.
-      @pre nrows >= O y ncols >= O
+      @pre @p nrows >= O y @p ncols >= O
       @post Reserva memoria para almacenar la imagen y la prepara para usarse.
     **/
     void Allocate(int nrows, int ncols, byte * buffer = 0);
@@ -190,10 +195,10 @@ public :
     int size() const;
 
 /**
-  * @brief Asigna el valor valor al píxel (@p i, @p j) de la imagen.
+  * @brief Asigna el valor valor al píxel ( @p i, @p j) de la imagen.
   * @param i Fila de la imagen en la que se encuentra el píxel a escribir .
   * @param j Columna de la imagen en la que se encuentra el píxel a escribir.
-  * @param value Valor que se escribirá en el píxel (@p i, @p j) .
+  * @param value Valor que se escribirá en el píxel ( @p i, @p j) .
   * @pre O <= @p i < get_rows()
   * @pre O <= @p j < get_cols()
   * @pre O <= @p value <= 255
@@ -230,12 +235,16 @@ public :
       */
     void set_pixel (int k, byte value);
 
+    //!Esto esta hecho de forma muy cutre diria yo
+    //!pero de la otra forma da error
+    //!ver de que otra forma se podria hacer
+    //!comprobar que esto esta bien
     /**
      * @brief Devuelve la dirección una fila
      * @return La dirección de la k-ésima fila de la matriz
      * @post La imagen no se modifica
      */
-    byte& get_dir_row(int k) const;
+    byte* get_dir_row(int k) const;
 
     /**
       * @brief Almacena imágenes en disco.
@@ -270,9 +279,9 @@ public :
      * @param in2 Umbral superior de la imagen de entrada
      * @param out1 Umbral inferior de la imagen de salida
      * @param out2 Umbral superior de la imagen de salida
-     * @pre 0 <= (in1, in2, out1, out2) <= 255
-     * @pre in1 < in2
-     * @pre out1 < out2
+     * @pre 0 <= ( @p in1, @p in2, @p out1, @p out2) <= 255
+     * @pre @p in1 < @p in2
+     * @pre @p out1 < @p out2
      *
      * @post El objeto que llama a la función es modificado
      */
@@ -284,7 +293,17 @@ public :
     // Genera un icono como reducción de una imagen.
     Image Subsample(int factor) const; //ROB
 
-    // Genera una subimagen.
+
+    /**
+     * @brief Genera una subimagen, una imagen recortada.
+     * @param nrow Fila inicial para recortar
+     * @param ncol Columna inicial para recortar
+     * @param height Numero de filas
+     * @param width Numero de columnas
+     * @return Imagen con el recorte
+     * @pre 0 =< @p nrow =< @a rows
+     * @post El objeto que llama a la funcion no se modifica
+     */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
     // Genera una imagen aumentada 2x.

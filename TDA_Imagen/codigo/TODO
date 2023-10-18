@@ -17,7 +17,7 @@ TO DO:
                 // Genera un icono como reducción de una imagen.
                 - Image Subsample(int factor) const;
 
-                // Genera una subimagen. yo
+                // Genera una subimagen. yo //DONE
                 - Image Crop(int nrow, int ncol, int height, int width) const;
 
                 // Genera una imagen aumentada 2x. yo
