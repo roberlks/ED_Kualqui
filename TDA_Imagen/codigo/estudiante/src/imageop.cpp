@@ -29,6 +29,18 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 }
 
+double Image::Mean(int i, int j, int height, int width) const{
+    double sum = 0;
+    for (int x = i; x < i+height; ++x){
+        for (int y = j; y < j+width; ++y){
+            sum += this->get_pixel(x,y);
+        }
+    }
+    return sum / (height*width);
+}
+
+
+
 //! Ver si lo siguiente esta decente asi
 // Las precondiciones las he comprobado de la siguiente manera:
 // Si el inicio de la recortada se salia de la original devuelvo una imagen vacia

@@ -43,7 +43,7 @@ ImageKind ReadImageKind (const char *path);
   * memoria dinámica. Será el usuario el responsable de liberarla.
   */
 unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
-
+//TODO: Arreglar esta especificacion (datos)
 /**
   * @brief Escribe una imagen de tipo PGM
   *
@@ -54,7 +54,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
   * @param cols columnas de la imagen
   * @return si ha tenido éxito en la escritura.
   */
-bool WritePGMImage (const char *path, const unsigned char *datos,
+bool WritePGMImage (const char *path, const unsigned char **datos,
                     const int rows, const int cols);
 
 

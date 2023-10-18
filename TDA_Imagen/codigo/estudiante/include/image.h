@@ -235,6 +235,16 @@ public :
       */
     void set_pixel (int k, byte value);
 
+    /**
+     * TODO: hacer la especificacion de esto
+    */
+    byte** get_img();
+
+    /**
+     * TODO: hacer la especificacion de esto
+    */
+    const byte** get_img() const;
+
     //!Esto esta hecho de forma muy cutre diria yo
     //!pero de la otra forma da error
     //!ver de que otra forma se podria hacer
@@ -244,7 +254,14 @@ public :
      * @return La dirección de la k-ésima fila de la matriz
      * @post La imagen no se modifica
      */
-    byte* get_dir_row(int k) const;
+
+    //TODO: preguntar si esta no va a petar (referenciar punteros?)
+    byte* get_dir_row(int k);
+
+    /**
+     * TODO: hacer esta especificacion
+    */
+    const byte* get_dir_row(int k) const;
 
     /**
       * @brief Almacena imágenes en disco.
@@ -301,7 +318,7 @@ public :
      * @param height Numero de filas
      * @param width Numero de columnas
      * @return Imagen con el recorte
-     * @pre 0 =< @p nrow =< @a rows
+     * @pre 0 <= @p nrow <= @a rows
      * @post El objeto que llama a la funcion no se modifica
      */
     Image Crop(int nrow, int ncol, int height, int width) const;
