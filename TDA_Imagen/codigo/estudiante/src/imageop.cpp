@@ -17,14 +17,23 @@ void Image::Invert(){
 
 
 void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
+    /*
+     * e1, e2 = in1, in2 = a,b
+     * s1, s2 = out1, out2 = min,max
+     *
+     * Rangos == 0-e1 -> 0-s1
+     *           e1-e2 -> s1,s2
+     *           e2-255 -> s2-255
+     */
+
 
 }
 
 //! Ver si lo siguiente esta decente asi
 // Las precondiciones las he comprobado de la siguiente manera:
 // Si el inicio de la recortada se salia de la original devuelvo una imagen vacia
-// Si esta dentro pero se sale por la anchura o altura, la recorto con el mismo inicio 
-// pero acabando en los filos de la imagen, aunque la altura o anchura ps es 
+// Si esta dentro pero se sale por la anchura o altura, la recorto con el mismo inicio
+// pero acabando en los filos de la imagen, aunque la altura o anchura ps es
 // mas pequeña de lo que te pide pero al menos no hay valores extraños
 Image Image::Crop(int nrow, int ncol, int height, int width) const{
     Image cropped;
@@ -35,7 +44,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
     height = ((this->get_rows() - nrow) > height) ? height : (this->get_rows() - nrow);
     width = ((this->get_cols() - ncol) > width) ? width : (this->get_cols() - ncol);
     cropped = Image(height, width);
-    
+
     for (int i = 0; i < height; ++i){
         for (int j = 0; j < width; ++j){
             cropped.set_pixel(i, j, this->get_pixel(i+nrow, j+ncol));
@@ -45,7 +54,8 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
     return cropped;
 }
 
-void Image::ShuffleRows() {
+
+void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
     const int p = 9973;
     Image tmp(this->get_rows(), this->get_cols());
     for (int r = 0; r < this->get_rows(); r++) {
