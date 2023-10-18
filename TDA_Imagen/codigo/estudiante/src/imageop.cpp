@@ -66,6 +66,23 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
     return cropped;
 }
 
+Image Image::Zoom2X() const{
+    int rowsz = this->get_rows()*2-1, colsz = this->get_cols()*2-1;
+    Image zoomed(this->get_rows()*2-1, this->get_cols()*2-1);
+
+    for (int i = 0; i < rowsz; ++i){
+        for (int j = 0; j < colsz; ++j){
+            if (i%2 == 0 && j%2 == 0){
+                zoomed.set_pixel(i, j, this->get_pixel(i/2, j/2));
+            }
+            else{
+                zoomed.set_pixel(i,j, round(this->Mean(i/2, j/2, i%2, j%2)));
+            }
+        }
+    }
+
+    return zoomed;
+}
 
 void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
     const int p = 9973;

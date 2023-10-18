@@ -303,8 +303,23 @@ public :
      * @post El objeto que llama a la función es modificado
      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2); //ROB
-
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+   
+    //TODO: ver si aqui tengo que controlar los pre dentro del metodo
+    /**
+     * @brief Calcula la media de los pixeles de una imagen 
+     * entera o de un fragmento de esta.
+     * @param i Fila inicial del fragmento
+     * @param j Columna inicial del fragmento
+     * @param height Altura del fragmento
+     * @param width Anchura del fragmento
+     * @return La media de los pixeles del fragmento
+     * @pre 0 <= @p i <= @a rows
+     * @pre 0 <= @p j <= @a cols
+     * @pre @a rows - @p i >= @p height
+     * @pre @a cols - @p j >= @p width
+     * @post El objeto no se modifica
+    */
+    
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.
@@ -319,11 +334,18 @@ public :
      * @param width Numero de columnas
      * @return Imagen con el recorte
      * @pre 0 <= @p nrow <= @a rows
+     * @pre 0 <= @p ncol <= @a cols
+     * @pre @a rows - @p nrow >= @p height
+     * @pre @a cols - @p ncol >= @p width
      * @post El objeto que llama a la funcion no se modifica
      */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
-    // Genera una imagen aumentada 2x.
+    /**
+     * @brief Genera una imagen aumentada 2x.
+     * @return La imagen aumentada
+     * @post El objeto que llama a la funcion no se modifica.
+    */
     Image Zoom2X() const;
 
 
