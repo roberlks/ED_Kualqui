@@ -245,10 +245,6 @@ public :
     */
     const byte** get_img() const;
 
-    //!Esto esta hecho de forma muy cutre diria yo
-    //!pero de la otra forma da error
-    //!ver de que otra forma se podria hacer
-    //!comprobar que esto esta bien
     /**
      * @brief Devuelve la dirección una fila
      * @return La dirección de la k-ésima fila de la matriz
@@ -364,6 +360,12 @@ public :
     void ShuffleRows(); //ROB
 } ;
 
-
+    /**
+     * @brief Comprueba que las imagenes son iguales
+     * @param i1 La primera imagen a comparar
+     * @param i2 La segunda imagen a comparar
+     * @return True si son iguales, false si no lo son.
+    */
+    bool operator==(const Image& i1, const Image& i2);
 #endif // _IMAGEN_H_
 

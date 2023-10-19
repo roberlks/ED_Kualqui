@@ -72,12 +72,7 @@ Image Image::Zoom2X() const{
 
     for (int i = 0; i < rowsz; ++i){
         for (int j = 0; j < colsz; ++j){
-            if (i%2 == 0 && j%2 == 0){
-                zoomed.set_pixel(i, j, this->get_pixel(i/2, j/2));
-            }
-            else{
-                zoomed.set_pixel(i,j, round(this->Mean(i/2, j/2, i%2, j%2)));
-            }
+            zoomed.set_pixel(i,j, round(this->Mean(i/2, j/2, i%2+1, j%2+1)));
         }
     }
 
@@ -94,4 +89,17 @@ void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
         }
     }
     Copy(tmp);
+}
+
+
+bool operator==(const Image& i1, const Image& i2){
+    int rows1 = i1.get_rows(), rows2 = i2.get_rows(), cols1 = i1.get_cols(), cols2 = i2.get_cols();
+    if (rows1 != rows2 || cols1 != cols2) return false;
+    for (int i = 0; i < rows1; ++i){
+        for (int j = 0; j < cols1; ++j){
+            if(i1.get_pixel(i,j) != i2.get_pixel(i,j)) return false;
+        }
+    } 
+
+    return true;
 }
