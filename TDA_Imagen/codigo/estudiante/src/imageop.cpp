@@ -26,6 +26,36 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
      *           e2-255 -> s2-255
      */
 
+    // Calcular constantes
+    // M = (max-min)/(b-a)
+    // TODO Peligro con los tipos de las constantes.
+    const double M1 = (double)(out1)/(double)(in1);
+    const double M2 = (double)(out2-out1)/(double)(in2-in1);
+    const double M3 = (double)(255-out2)/(double)(255-in2);
+
+    for (int i=0; i<this->size(); i++){
+        byte z = this->get_pixel(i);
+        double M;
+        byte min, a;
+        if (z <= in1){
+            M = M1;
+            min = 0;
+            a = 0;
+        }
+        else if (z <= in2){
+            M = M2;
+            min = out1;
+            a = in1;
+        }
+        else{
+            M = M3;
+            min = out2;
+            a = in2;
+        }
+        this->set_pixel(i, (byte)((round(min + (M*(z-a))))));
+    }
+
+
 
 }
 
@@ -55,14 +85,15 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
 }
 
 
-void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
+void Image::ShuffleRows() {
     const int p = 9973;
     Image tmp(this->get_rows(), this->get_cols());
+
+    byte **tmp_pixels_dir;
+
     for (int r = 0; r < this->get_rows(); r++) {
         int newr = (r * p) % this->get_rows();
-        for (int c = 0; c < this->get_cols(); c++) {
-            tmp.set_pixel(r, c, get_pixel(newr, c));
-        }
+        tmp_pixels_dir[r] = this->get_dir_row(newr);
     }
-    Copy(tmp);
+    this->get_img() = tmp_pixels_dir;
 }

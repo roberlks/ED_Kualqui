@@ -22,7 +22,7 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
 
     img = new byte * [rows];
 
-    if (buffer != 0) {
+    if (buffer != nullptr) {
         img[0] = buffer;
         header = buffer;
     }
@@ -39,7 +39,7 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
 void Image::Initialize (int nrows, int ncols, byte * buffer){
     if ((nrows == 0) || (ncols == 0)){
         rows = cols = 0;
-        img = 0;
+        img = nullptr;
     }
     else Allocate(nrows, ncols, buffer);
 }
@@ -52,15 +52,16 @@ void Image::Copy(const Image & orig){
         set_pixel(k,orig.get_pixel(k));
 }
 
-// Función auxiliar para destruir objetos Imagen
+// Función auxiliar para comprobar si la imagen está vacía
 bool Image::Empty() const{
     return (rows == 0) || (cols == 0);
 }
 
+// Función auxiliar para destruir objetos Imagen
 void Image::Destroy(){
     if (!Empty()){
-        delete [] header;
-        delete [] img;
+        delete [] this->header;
+        delete [] this->img;
     }
 }
 
