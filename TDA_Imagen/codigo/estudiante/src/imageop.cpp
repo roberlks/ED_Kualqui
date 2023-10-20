@@ -29,6 +29,18 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 }
 
+double Image::Mean(int i, int j, int height, int width) const{
+    double sum = 0;
+    for (int x = i; x < i+height; ++x){
+        for (int y = j; y < j+width; ++y){
+            sum += this->get_pixel(x,y);
+        }
+    }
+    return sum / (height*width);
+}
+
+
+
 //! Ver si lo siguiente esta decente asi
 // Las precondiciones las he comprobado de la siguiente manera:
 // Si el inicio de la recortada se salia de la original devuelvo una imagen vacia
@@ -54,6 +66,18 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
     return cropped;
 }
 
+Image Image::Zoom2X() const{
+    int rowsz = this->get_rows()*2-1, colsz = this->get_cols()*2-1;
+    Image zoomed(this->get_rows()*2-1, this->get_cols()*2-1);
+
+    for (int i = 0; i < rowsz; ++i){
+        for (int j = 0; j < colsz; ++j){
+            zoomed.set_pixel(i,j, round(this->Mean(i/2, j/2, i%2+1, j%2+1)));
+        }
+    }
+
+    return zoomed;
+}
 
 void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
     const int p = 9973;
@@ -65,4 +89,17 @@ void Image::ShuffleRows() { //ARREGLARRRRRRRR CAMBIAR REPRE INTERNA
         }
     }
     Copy(tmp);
+}
+
+
+bool operator==(const Image& i1, const Image& i2){
+    int rows1 = i1.get_rows(), rows2 = i2.get_rows(), cols1 = i1.get_cols(), cols2 = i2.get_cols();
+    if (rows1 != rows2 || cols1 != cols2) return false;
+    for (int i = 0; i < rows1; ++i){
+        for (int j = 0; j < cols1; ++j){
+            if(i1.get_pixel(i,j) != i2.get_pixel(i,j)) return false;
+        }
+    } 
+
+    return true;
 }
