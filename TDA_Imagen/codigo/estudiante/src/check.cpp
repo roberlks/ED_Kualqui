@@ -13,8 +13,6 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
-
-
     Image i1, i2;
 
     if(!i1.Load(argv[1])){
@@ -28,4 +26,6 @@ int main(int argc, char *argv[]){
     }
 
     cout << (i1 == i1);
+
+    return 0;
 }
