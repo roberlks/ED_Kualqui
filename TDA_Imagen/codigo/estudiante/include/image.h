@@ -235,16 +235,29 @@ public :
       */
     void set_pixel (int k, byte value);
 
-    //!Esto esta hecho de forma muy cutre diria yo
-    //!pero de la otra forma da error
-    //!ver de que otra forma se podria hacer
-    //!comprobar que esto esta bien
+    /**
+     * TODO: hacer la especificacion de esto
+    */
+    byte** get_img();
+
+    /**
+     * TODO: hacer la especificacion de esto
+    */
+    const byte** get_img() const;
+
     /**
      * @brief Devuelve la dirección una fila
      * @return La dirección de la k-ésima fila de la matriz
      * @post La imagen no se modifica
      */
-    byte* get_dir_row(int k) const;
+
+    //TODO: preguntar si esta no va a petar (referenciar punteros?)
+    byte* get_dir_row(int k);
+
+    /**
+     * TODO: hacer esta especificacion
+    */
+    const byte* get_dir_row(int k) const;
 
     /**
       * @brief Almacena imágenes en disco.
@@ -286,8 +299,23 @@ public :
      * @post El objeto que llama a la función es modificado
      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2); //ROB
-
-    // Calcula la media de los píxeles de una imagen entera o de un fragmento de ésta.
+   
+    //TODO: ver si aqui tengo que controlar los pre dentro del metodo
+    /**
+     * @brief Calcula la media de los pixeles de una imagen 
+     * entera o de un fragmento de esta.
+     * @param i Fila inicial del fragmento
+     * @param j Columna inicial del fragmento
+     * @param height Altura del fragmento
+     * @param width Anchura del fragmento
+     * @return La media de los pixeles del fragmento
+     * @pre 0 <= @p i <= @a rows
+     * @pre 0 <= @p j <= @a cols
+     * @pre @a rows - @p i >= @p height
+     * @pre @a cols - @p j >= @p width
+     * @post El objeto no se modifica
+    */
+    
     double Mean (int i, int j, int height, int width) const;
 
     // Genera un icono como reducción de una imagen.
@@ -301,12 +329,19 @@ public :
      * @param height Numero de filas
      * @param width Numero de columnas
      * @return Imagen con el recorte
-     * @pre 0 =< @p nrow =< @a rows
+     * @pre 0 <= @p nrow <= @a rows
+     * @pre 0 <= @p ncol <= @a cols
+     * @pre @a rows - @p nrow >= @p height
+     * @pre @a cols - @p ncol >= @p width
      * @post El objeto que llama a la funcion no se modifica
      */
     Image Crop(int nrow, int ncol, int height, int width) const;
 
-    // Genera una imagen aumentada 2x.
+    /**
+     * @brief Genera una imagen aumentada 2x.
+     * @return La imagen aumentada
+     * @post El objeto que llama a la funcion no se modifica.
+    */
     Image Zoom2X() const;
 
 
@@ -325,6 +360,12 @@ public :
     void ShuffleRows(); //ROB
 } ;
 
-
+    /**
+     * @brief Comprueba que las imagenes son iguales
+     * @param i1 La primera imagen a comparar
+     * @param i2 La segunda imagen a comparar
+     * @return True si son iguales, false si no lo son.
+    */
+    bool operator==(const Image& i1, const Image& i2);
 #endif // _IMAGEN_H_
 

@@ -91,8 +91,8 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols){
 }
 
 // _____________________________________________________________________________
-
-bool WritePGMImage (const char *nombre, const unsigned char *datos,
+//TODO: ver si esto esta bien
+bool WritePGMImage (const char *nombre, const unsigned char **datos,
                     const int rows, const int cols){
   ofstream f(nombre);
   bool res= true;
@@ -101,7 +101,9 @@ bool WritePGMImage (const char *nombre, const unsigned char *datos,
     f << "P5" << endl;
     f << cols << ' ' << rows << endl;
     f << 255 << endl;
-    f.write(reinterpret_cast<const char *>(datos),rows*cols);
+    for(int i = 0; i < rows; ++i){
+      f.write(reinterpret_cast<const char *>(datos[i]), sizeof(const unsigned char) * cols);
+    }
     if (!f)
       res=false;
   }

@@ -1,4 +1,4 @@
-//TODO el brief del programas
+//TODO hacer el brief de este programa
 
 #include <iostream>
 #include <cstring>
@@ -14,9 +14,9 @@ int main(int argc, char* argv[]){
     Image image;
 
     //Check the number of arguments
-    if (argc != 7){
+    if (argc != 6){
         cerr << "Error: Numero incorrecto de parametros.\n";
-        cerr << "Uso: subimagen <FicheroOrigen> <FicheroDestino> <fila> <columna> <filasSubimagen> <columnasSubimagen>\n";
+        cerr << "Uso: zoom <FicheroOrigen> <FicheroDestino> <fila> <col> <side>\n";
         return 1;
     }
 
@@ -36,16 +36,16 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    //! Ver si tengo que comprobar que los numeros son numeros validos
-
-    int row, col, rows_sub, cols_sub;
+    int row, col, side;
     row = atoi(argv[3]);
     col = atoi(argv[4]);
-    rows_sub = atoi(argv[5]);
-    cols_sub = atoi(argv[6]);
+    side = atoi(argv[5]);
+    
+    //! Ver si tengo que comprobar las precondiciones del crop
 
-    //! Ver si tengo que comprobar las precondiciones del pre
-    image = image.Crop(row, col, rows_sub, cols_sub);
+    image = image.Crop(row, col, side, side);
+
+    image = image.Zoom2X();
 
     if (image.Save(destination))
         cout  << "La imagen se guardo en " << destination << endl;
@@ -54,7 +54,6 @@ int main(int argc, char* argv[]){
         cerr << "Terminando la ejecucion del programa." << endl;
         return 1;
     }
-
 
     return 0;
 }
