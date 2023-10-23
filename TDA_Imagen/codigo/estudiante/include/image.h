@@ -298,7 +298,7 @@ public :
      *
      * @post El objeto que llama a la función es modificado
      */
-    void AdjustContrast (byte in1, byte in2, byte out1, byte out2); //ROB
+    void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
    
     //TODO: ver si aqui tengo que controlar los pre dentro del metodo
     /**
@@ -318,8 +318,15 @@ public :
     
     double Mean (int i, int j, int height, int width) const;
 
-    // Genera un icono como reducción de una imagen.
-    Image Subsample(int factor) const; //ROB
+    /**
+     * @brief Genera un icono como reducción de una imagen
+     * @param factor Factor de reducción de la imagen original con respecto al icono
+     * @pre factor > 0
+     * @return La imagen iconizada
+     * @post La imagen no se modifica
+     * @post La image resultante tendrá tamaño int(filas/factor) X int(columnas/factor). Descartando los decimales de la división
+     */
+    Image Subsample(int factor) const;
 
 
     /**
