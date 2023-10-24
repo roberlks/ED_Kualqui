@@ -168,7 +168,7 @@ bool Image::Save (const char * file_path) const {
     return WritePGMImage(file_path, p, get_rows(), get_cols());
 }
 
-const byte** Image::get_img() const{
+byte** Image::get_img(){
     return img;
 }
 

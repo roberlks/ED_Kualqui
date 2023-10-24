@@ -117,10 +117,10 @@ void Image::ShuffleRows() {
 
     for (int r = 0; r < this->get_rows(); r++) {
         int newr = (r * p) % this->get_rows();
-        tmp_pixels_dir[r] = this->get_dir_row(newr);
+        tmp_pixels_dir[r] = this->img[newr];
     }
 
-    this->get_img() = tmp_pixels_dir;
+    this->img = tmp_pixels_dir;
 
 }
 

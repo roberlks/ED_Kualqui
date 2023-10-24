@@ -11,9 +11,9 @@
   </component>
   <component name="CMakeRunConfigurationManager">
     <generated>
-      <config projectName="practica2" targetName="negativo" />
       <config projectName="practica2" targetName="image" />
       <config projectName="practica2" targetName="doc_doxygen" />
+      <config projectName="practica2" targetName="icono" />
     </generated>
   </component>
   <component name="CMakeSettings">
@@ -23,7 +23,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b88400f-23f0-40fb-b479-ee3f5aa5bfd9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/image.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/imageop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/imageop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/mains/check.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/check.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/mains/icono.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/icono.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/mains/negativo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/negativo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/mains/subimagen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/subimagen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/estudiante/src/mains/zoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/estudiante/src/zoom.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,6 +45,16 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
   </component>
   <component name="ProjectApplicationVersion">
     <option name="ide" value="CLion" />
@@ -68,7 +87,13 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.negativo">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/estudiante/src" />
+      <recent name="$PROJECT_DIR$/estudiante/src/mains" />
+    </key>
+  </component>
+  <component name="RunManager" selected="CMake Application.icono">
     <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
       <texify-bibtex>
         <compiler />
@@ -80,22 +105,17 @@
       </texify-bibtex>
       <method v="2" />
     </configuration>
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="doc_doxygen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="doc_doxygen" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="image" CONFIG_NAME="Debug">
+    <configuration name="icono" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="icono" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="practica2" RUN_TARGET_NAME="icono">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="negativo" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="negativo" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="practica2" RUN_TARGET_NAME="negativo">
+    <configuration name="image" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="practica2" TARGET_NAME="image" CONFIG_NAME="Debug">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
@@ -140,8 +160,8 @@
     </configuration>
     <list>
       <item itemvalue="CMake Application.doc_doxygen" />
+      <item itemvalue="CMake Application.icono" />
       <item itemvalue="CMake Application.image" />
-      <item itemvalue="CMake Application.negativo" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -156,6 +176,7 @@
       <workItem from="1696325403745" duration="3270000" />
       <workItem from="1696339134317" duration="1609000" />
       <workItem from="1696694447926" duration="694000" />
+      <workItem from="1698137688013" duration="589000" />
     </task>
     <servers />
   </component>

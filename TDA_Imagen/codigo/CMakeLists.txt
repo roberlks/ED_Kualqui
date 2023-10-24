@@ -24,7 +24,9 @@ target_link_libraries(zoom LINK_PUBLIC image)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/icono.cpp)
-add_executable(icono ${BASE_FOLDER}/src/icono.cpp)
+add_executable(icono ${BASE_FOLDER}/src/icono.cpp
+        estudiante/src/icono.cpp
+        estudiante/src/icono.cpp)
 target_link_libraries(icono LINK_PUBLIC image)
 endif()
 
