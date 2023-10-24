@@ -92,7 +92,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols){
 
 // _____________________________________________________________________________
 //TODO: ver si esto esta bien
-bool WritePGMImage (const char *nombre, const unsigned char **datos,
+bool WritePGMImage (const char *nombre, const unsigned char *const *datos,
                     const int rows, const int cols){
   ofstream f(nombre);
   bool res= true;

@@ -164,7 +164,7 @@ byte Image::get_pixel (int k) const {
 
 // Métodos para almacenar y cargar imagenes en disco
 bool Image::Save (const char * file_path) const {
-    const byte ** p = this->img;
+    const byte *const * p = this->img;
     return WritePGMImage(file_path, p, get_rows(), get_cols());
 }
 

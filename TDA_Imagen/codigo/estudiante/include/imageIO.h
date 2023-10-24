@@ -54,7 +54,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
   * @param cols columnas de la imagen
   * @return si ha tenido éxito en la escritura.
   */
-bool WritePGMImage (const char *path, const unsigned char **datos,
+bool WritePGMImage (const char *path, const unsigned char *const *datos,
                     const int rows, const int cols);
 
 
