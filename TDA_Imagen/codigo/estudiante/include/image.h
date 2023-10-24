@@ -236,30 +236,6 @@ public :
     void set_pixel (int k, byte value);
 
     /**
-     * TODO: hacer la especificacion de esto
-    */
-    byte** get_img();
-
-    /**
-     * TODO: hacer la especificacion de esto
-    */
-    const byte** get_img() const;
-
-    /**
-     * @brief Devuelve la dirección una fila
-     * @return La dirección de la k-ésima fila de la matriz
-     * @post La imagen no se modifica
-     */
-
-    //TODO: preguntar si esta no va a petar (referenciar punteros?)
-    byte* get_dir_row(int k);
-
-    /**
-     * TODO: hacer esta especificacion
-    */
-    const byte* get_dir_row(int k) const;
-
-    /**
       * @brief Almacena imágenes en disco.
       * @param file_path Ruta donde se almacenará la imagen.
       * @pre file path debe ser una ruta válida donde almacenar el fichero de salida.
