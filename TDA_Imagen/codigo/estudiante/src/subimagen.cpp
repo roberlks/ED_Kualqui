@@ -36,8 +36,7 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    //! Ver si tengo que comprobar que los numeros son numeros validos
-
+    
     int row, col, rows_sub, cols_sub;
     row = atoi(argv[3]);
     col = atoi(argv[4]);
