@@ -21,7 +21,7 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
      * e1, e2 = in1, in2 = a,b
      * s1, s2 = out1, out2 = min,max
      *
-     * Rangos == 0-e1 -> 0-s1
+     * Rangos == 0-e1 -> 0-s1u
      *           e1-e2 -> s1,s2
      *           e2-255 -> s2-255
      */
@@ -117,11 +117,46 @@ void Image::ShuffleRows() {
 
     for (int r = 0; r < this->get_rows(); r++) {
         int newr = (r * p) % this->get_rows();
-        tmp_pixels_dir[r] = this->get_dir_row(newr);
+        tmp_pixels_dir[r] = this->img[newr];
     }
 
-    this->get_img() = tmp_pixels_dir;
+    this->img = tmp_pixels_dir;
 
+}
+
+Image Image::Subsample(int factor) const {
+    // Verificar si el factor de reducción es válido
+    if (factor <= 0) {
+        std::cerr<< "Error: Factor de reducción inválido." << std::endl;
+        return *this;
+    }
+
+    // Calcular las dimensiones de la nueva imagen reducida
+    int newRows = rows / factor;
+    int newCols = cols / factor;
+
+    // Crear una nueva instancia de la clase Image con las dimensiones calculadas
+    Image reducedImage(newRows, newCols);
+
+    // Iterar sobre la nueva imagen y calcular el valor de cada píxel
+    for (int i = 0; i < newRows; i++) {
+        for (int j = 0; j < newCols; j++) {
+            // Calcular la posición en la imagen original
+            int startRow = i * factor;
+            int startCol = j * factor;
+            int endRow = startRow + factor;
+            int endCol = startCol + factor;
+
+            // Calcular la media de los píxeles en el fragmento utilizando el método Mean
+            double meanValue = Mean(startRow, startCol, factor, factor);
+
+            // Redondear la media al entero más cercano
+            byte average = static_cast<byte>(std::round(meanValue));
+            reducedImage.set_pixel(i, j, average);
+        }
+    }
+
+    return reducedImage;
 }
 
 

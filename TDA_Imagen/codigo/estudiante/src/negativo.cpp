@@ -22,7 +22,7 @@
 #include <cstring>
 #include <cstdlib>
 
-#include <image.h>
+#include "image.h"
 
 using namespace std;
 
