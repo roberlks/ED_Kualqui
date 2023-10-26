@@ -109,8 +109,8 @@ Image Image::Zoom2X() const{
     return zoomed;
 }
 
-void Image::ShuffleRows() {
-    const int p = 9973;
+void Image::ShuffleRows(int _p) {
+    const int p = _p;
     
 
     byte **tmp_pixels_dir;

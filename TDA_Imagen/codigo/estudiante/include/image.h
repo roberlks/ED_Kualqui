@@ -332,15 +332,18 @@ public :
     /**
      *
      * @brief Baraja pseudoaleatoriamente las filas de una imagen.
-     * @pre rows < 9973
+     * @pre rows < @p _p (o en su defecto < 9973
+     * @pre @p _p is a prime number, >= rows
      * @post EL objeto que llama al método contiene ahora una nueva imagen igual
      * que la anterior, pero con las filas ordenadas según el siguiente algoritmo:
      * \f[
      * \overset{^}{r} = (r \cdot p) % rows
      * \f]
+     * @param _p El número primo que se usará para barajar las filas
+     *
      */
 
-    void ShuffleRows(); //ROB
+    void ShuffleRows(int _p = 9973); //ROB
 } ;
 
     /**
