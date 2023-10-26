@@ -34,12 +34,15 @@ int main(int argc, char *argv[]){
     }
     fich_orig = argv[1];
     fich_rdo = argv[2];
+    bool is_prime = false;
+
     if (argc == 4){
         prime = stoi((string)(argv[3]));
+        is_prime = isPrime(prime);
+
     }
     //Check if prime is a prime number
-    bool is_prime = isPrime(prime);
-
+    cout << "ANTES DE LOAD";
     //Open image
     Image img_orig;
     if (!img_orig.Load(fich_orig)){
@@ -47,12 +50,15 @@ int main(int argc, char *argv[]){
         return 1;
     }
     //Shuffle image
+    cout << "ANTES DE SHUFFLE";
     if (is_prime){
         img_orig.ShuffleRows(prime);
     }
     else{
         img_orig.ShuffleRows();
     }
+
+    cout << "DESPUES DEL SHUFFLE";
     //Save image
     if (!img_orig.Save(fich_rdo)){
         cerr << "Error en el guardado de la imagen a " << fich_rdo << endl;
