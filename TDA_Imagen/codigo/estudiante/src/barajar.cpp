@@ -4,6 +4,7 @@
 */
 
 #include <iostream>
+#include <stdlib.h>
 #include "image.h"
 
 using namespace std;
@@ -37,12 +38,12 @@ int main(int argc, char *argv[]){
     bool is_prime = false;
 
     if (argc == 4){
-        prime = stoi((string)(argv[3]));
+        prime = atoi(argv[3]);
         is_prime = isPrime(prime);
 
     }
     //Check if prime is a prime number
-    cout << "ANTES DE LOAD";
+    cout << "ANTES DE LOAD" << endl;
     //Open image
     Image img_orig;
     if (!img_orig.Load(fich_orig)){
