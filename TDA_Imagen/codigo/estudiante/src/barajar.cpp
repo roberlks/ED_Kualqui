@@ -1,5 +1,6 @@
 /**
 * @file barajar.cpp
+ * @authors Irina Kuzyshyn, Roberto González
  * @brief Baraja una imagen PGM (por filas)
 */
 
@@ -43,7 +44,7 @@ int main(int argc, char *argv[]){
 
     }
     //Check if prime is a prime number
-    cout << "ANTES DE LOAD" << endl;
+
     //Open image
     Image img_orig;
     if (!img_orig.Load(fich_orig)){
@@ -51,7 +52,6 @@ int main(int argc, char *argv[]){
         return 1;
     }
     //Shuffle image
-    cout << "ANTES DE SHUFFLE";
     if (is_prime){
         img_orig.ShuffleRows(prime);
     }
@@ -59,7 +59,6 @@ int main(int argc, char *argv[]){
         img_orig.ShuffleRows();
     }
 
-    cout << "DESPUES DEL SHUFFLE";
     //Save image
     if (!img_orig.Save(fich_rdo)){
         cerr << "Error en el guardado de la imagen a " << fich_rdo << endl;
