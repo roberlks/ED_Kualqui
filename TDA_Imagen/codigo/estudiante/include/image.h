@@ -332,7 +332,7 @@ public :
     /**
      *
      * @brief Baraja pseudoaleatoriamente las filas de una imagen.
-     * @pre rows < @p _p (o en su defecto < 9973
+     * @pre rows < @p _p (o en su defecto < 9973)
      * @pre @p _p is a prime number, >= rows
      * @post EL objeto que llama al método contiene ahora una nueva imagen igual
      * que la anterior, pero con las filas ordenadas según el siguiente algoritmo:

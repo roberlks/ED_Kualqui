@@ -1,6 +1,7 @@
 /**
 * @file contraste.cpp
- * @brief
+ * @brief Ajusta el contraste de una imagen PGM (estiramiento del histograma)
+ * @authors Irina Kuzyshyn, Roberto González
  * @return 0 if everything went well, 1 otherwise.
 */
 

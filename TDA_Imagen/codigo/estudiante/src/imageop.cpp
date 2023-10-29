@@ -26,9 +26,18 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
      *           e2-255 -> s2-255
      */
 
+
+    //* @pre 0 <= ( @p in1, @p in2, @p out1, @p out2) <= 255
+    //* @pre @p in1 < @p in2    @p out1 < @p out2
+    if (in1 < 0 || in1 > 255 || in2 < 0 || in2 > 255 || out1 < 0 || out1 > 255 || out2 < 0 || out2 > 255
+        || in1 > in2 || out1 > out2){
+        std::cerr << "Error: Valor de entrada/salida inválido." << std::endl;
+        return;
+    }
+
+
     // Calcular constantes
     // M = (max-min)/(b-a)
-    // TODO Peligro con los tipos de las constantes.
     const double M1 = (double)(out1)/(double)(in1);
     const double M2 = (double)(out2-out1)/(double)(in2-in1);
     const double M3 = (double)(255-out2)/(double)(255-in2);
@@ -120,15 +129,18 @@ Image Image::Zoom2X() const{
 
 void Image::ShuffleRows(int _p) {
     const int p = _p;
-    
 
-    byte **tmp_pixels_dir;
+    //* @pre rows < @p _p (o en su defecto < 9973)
+    if (p < this->get_rows()){
+        std::cerr << "Error, número primo no valido. (Metodo ShuffleRows())";
+        return;
+    }
 
+    byte **tmp_pixels_dir = new byte*[this->get_rows()];
     for (int r = 0; r < this->get_rows(); r++) {
         int newr = (r * p) % this->get_rows();
         tmp_pixels_dir[r] = this->img[newr];
     }
-
     this->img = tmp_pixels_dir;
 
 }
