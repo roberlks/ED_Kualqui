@@ -1,4 +1,25 @@
-//TODO hacer el brief de este programa
+/**
+ * @file zoom.cpp
+ * @brief Recorta una imagen PGM
+ * @authors Irina Kuzyshyn, Roberto Gonzalez
+ *
+ * Este programa hace zoom a una imagen y toma 6 parametros de entrada
+ * 1. El nombre del programa (por convención).
+ * 2. El nombre del archivo de entrada que contiene la imagen PGM original.
+ * 3. El nombre del archivo de salida donde se guardará la imagen PGM recortada.
+ * 4. La fila donde empieza el zoom
+ * 5. La columna donde empieza el zoom
+ * 6. El lado de la imagen que recortamos para hacerle zoom a posteriori
+ *
+ * EG: ~$ ./zoom ./[ArchivosEntrada]/[ImagenEntrada].pmg ./[CarpetaSalida]/[ImagenSalida].pgm fila columna lado
+ *
+ * @param argc Número de argumentos de línea de comandos (debe ser 6).
+ * @param argv Arreglo de cadenas que contiene los argumentos de línea de comandos.
+ * @return Devuelve 0 si la operación se realizó con éxito, o un valor diferente si hubo un error.
+ *
+ * @note Este programa escribirá la imagen aumentada de la imagen de entrada @p argv [1]
+ *       en el archivo de salida especificado. @p argv [2] segun los parametros de @p argv [3-5]
+ */
 
 #include <iostream>
 #include <cstring>
@@ -23,7 +44,6 @@ int main(int argc, char* argv[]){
     origin = argv[1];
     destination = argv[2];
 
-    //! no se si esto es necesario
     // Mostramos argumentos
     cout << endl;
     cout << "Fichero origen: " << origin << endl;
@@ -40,12 +60,21 @@ int main(int argc, char* argv[]){
     row = atoi(argv[3]);
     col = atoi(argv[4]);
     side = atoi(argv[5]);
+
+    // Check the preconditions of crop()
     
-    //! Ver si tengo que comprobar las precondiciones del crop
-
-    image = image.Crop(row, col, side, side);
-
-    image = image.Zoom2X();
+    if (row < image.get_rows() && col < image.get_cols()){
+        side = ((image.get_rows() - row) > side) ? side : (image.get_rows() - row);
+        side = ((image.get_cols() - col) > side) ? side : (image.get_cols() - col);
+        image = image.Crop(row, col, side, side);
+        image = image.Zoom2X();
+        // Mostramos que hemos recortado la imagen con exito y le hemos hecho zoom
+        cout << "Se ha hecho zoom a la imagen con los parametros establecidos correctamente" << endl;
+    }
+    else{
+        cout << "Se guardara la imagen original, parametros introducidos incorrectos" << endl;
+    }
+    
 
     if (image.Save(destination))
         cout  << "La imagen se guardo en " << destination << endl;

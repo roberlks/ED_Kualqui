@@ -61,32 +61,41 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 double Image::Mean(int i, int j, int height, int width) const{
     double sum = 0;
+
+    // Check the preconditions
+    if (i > this->get_rows() || j > this->get_cols()){
+        return 0;
+    }
+
+    height = ((this->get_rows() - i) > height) ? height : (this->get_rows() - i);
+    width = ((this->get_cols() - j) > width) ? width : (this->get_cols() - j);
+    
+    // Sum of the pixels for the mean
     for (int x = i; x < i+height; ++x){
         for (int y = j; y < j+width; ++y){
             sum += this->get_pixel(x,y);
         }
     }
-    return sum / (height*width);
+
+    double mean = (height*width == 0)? 0 : sum / (height*width);
+    return mean;
 }
 
-
-
-//! Ver si lo siguiente esta decente asi
-// Las precondiciones las he comprobado de la siguiente manera:
-// Si el inicio de la recortada se salia de la original devuelvo una imagen vacia
-// Si esta dentro pero se sale por la anchura o altura, la recorto con el mismo inicio
-// pero acabando en los filos de la imagen, aunque la altura o anchura ps es
-// mas pequeña de lo que te pide pero al menos no hay valores extraños
 Image Image::Crop(int nrow, int ncol, int height, int width) const{
     Image cropped;
-    if (nrow > this->get_rows() || ncol > this->get_cols()){
+
+    // Check the preconditions
+    if (nrow >= this->get_rows() || ncol >= this->get_cols()){
         return cropped;
     }
 
     height = ((this->get_rows() - nrow) > height) ? height : (this->get_rows() - nrow);
     width = ((this->get_cols() - ncol) > width) ? width : (this->get_cols() - ncol);
+
+    // Create an image with the size of the cropped image
     cropped = Image(height, width);
 
+    // Copy the needed part of the original image
     for (int i = 0; i < height; ++i){
         for (int j = 0; j < width; ++j){
             cropped.set_pixel(i, j, this->get_pixel(i+nrow, j+ncol));
