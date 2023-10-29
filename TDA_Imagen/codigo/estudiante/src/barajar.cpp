@@ -44,6 +44,7 @@ int main(int argc, char *argv[]){
 
     }
     //Check if prime is a prime number
+
     //Open image
     Image img_orig;
     if (!img_orig.Load(fich_orig)){
