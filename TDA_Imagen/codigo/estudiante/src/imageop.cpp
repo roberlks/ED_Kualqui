@@ -142,7 +142,6 @@ void Image::ShuffleRows(int _p) {
         tmp_pixels_dir[r] = this->img[newr];
     }
     this->img = tmp_pixels_dir;
-
 }
 
 Image Image::Subsample(int factor) const {

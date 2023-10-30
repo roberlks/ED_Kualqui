@@ -32,8 +32,7 @@ enum LoadResult: unsigned char {
 
   \#include <Imagen.h>
 
-  @author Roberto González
-  @author Irina Kuzyshyn
+  @authors Roberto González, Irina Kuzyshin
   @date Octubre 2023
 
 **/
@@ -342,7 +341,7 @@ public :
      *
      */
 
-    void ShuffleRows(int _p = 9973); //ROB
+    void ShuffleRows(int _p = 9973);
 } ;
 
     /**
