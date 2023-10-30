@@ -1,5 +1,5 @@
-/*! \mainpage Título de la página principal
-
+/*! \mainpage Expansión e implementación del TDA Imagen
+<!--
 @image html doxyque.png ""
 
 # Información sobre Doxygen
@@ -19,7 +19,7 @@ perfecto, _CLÁSICO_. Así puedes centrarte en el contenido.
 
 Por último, lo hemos visto en clase y hay suficientes ejemplos en el código fuente proporcionado, pero puedes consultar la
 mayor parte de la sintaxis de Doxygen para comentar código en su
-[documentación](https://www.doxygen.nl/manual/docblocks.html).
+[documentación](https://www.doxygen.nl/manual/docblocks.html). -->
 
 # Introducción
 
@@ -43,20 +43,39 @@ problema, en todos los casos, pero en el Save() debemos usarlo de forma correcta
 
 Ahora sí, pasemos a comentar brevemente los distintos métodos que nos permiten modificar de distintas formas imágenes.
 
-AdjustContrast(): 
+## AdjustContrast():
+Este método permite modificar el contraste de una imagen. Se aplican cuatro umbrales para definir la transformación de
+píxeles: in1, in2, out1 y out2. Es importante que estos umbrales cumplan con ciertas condiciones (0 <= in1, in2, out1, out2 <= 255)
+y que in1 < in2 y out1 < out2. La imagen se modifica aplicando una función de ajuste de contraste. Este método no devuelve una
+nueva imagen, sino que modifica el objeto actual.
 
-Subsample(): 
 
-Crop(): Un detalle a comentar aquí, es la forma en la que hemos gestionado las precondiciones. Se nos pueden dar dos casos:
+##Subsample():
+El método `Subsample` es utilizado para crear un icono o una versión reducida de una imagen existente. El propósito principal
+es disminuir la resolución de la imagen original, lo que resulta en una imagen más pequeña con menos detalle. El tamaño de
+la nueva imagen reducida se calcula en función de un factor de reducción especificado.
+
+## Crop():
+Un detalle a comentar aquí, es la forma en la que hemos gestionado las precondiciones. Se nos pueden dar dos casos:
 el primero es que el inicio de la imagen recortada esté fuera de la original, en ese caso devolvemos una imagen vacía; y el 
 segundo es que la altura o la anchura de la imagen recortada se salga fuera de la original, en cuyo caso simplemente me 
 restrinjo a las medidas de la imagen original, para que la imagen recortada empiece en el píxel establecido por @p nrow y @p ncol
 y termine en los bordes de la imagen original si se saliera. 
 
-Zoom2X(): En este método hemos usado el método Mean para hacer la media entre los píxeles que necesitamos 
+## Zoom2X():
+En este método hemos usado el método Mean para hacer la media entre los píxeles que necesitamos
 en cada momento.
 
-ShuffleRows(): 
+## ShuffleRows():
+El método ShuffleRows se utiliza para barajar pseudoaleatoriamente las filas de una imagen. Las filas se reordenan siguiendo un
+algoritmo basado en un número primo _p. Es importante que _p sea un número primo y que sea mayor o igual al número de filas de
+la imagen. El objeto que llama a este método se modificará para contener una nueva imagen con las filas reordenadas.
+Es destacable que este método esta implementado de una forma bastante eficiente, manejando punteros a las filas de la imagen.
+Como una imagen, internamente, es un array de punteros a bytes, podemos intercambiar las filas simplemente cambiando a donde apunta
+cada posición del array.
+Esto provoca la necesidad de añadir un puntero al comienzo real de la imagen en memoria, "HEADER" para poder liberar la memoria al momento de
+destruir la imagen.
+
 
 Además hemos añadido el operador relacional == para poder comprobar que nuestro código genera las imágenes correctamente.
 En él simplemente comprobamos primero que tenga las mismas filas y columnas y después vamos píxel a píxel comprobando que 
