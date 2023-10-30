@@ -1,6 +1,6 @@
 /*! \mainpage Título de la página principal
 
-@image html doxyque.png "Pie de foto"
+@image html doxyque.png ""
 
 # Información sobre Doxygen
 Doxygen admite el uso de la [sintaxis de Markdown (Consulta aquí los comandos básicos)](https://www.markdownguide.org/basic-syntax).
@@ -23,7 +23,44 @@ mayor parte de la sintaxis de Doxygen para comentar código en su
 
 # Introducción
 
-A RELLENAR POR EL ESTUDIANTE
+Vamos a hacer un breve resumen de los aspectos que hemos tenido en cuenta en el proyecto, en cuanto a la representación 
+interna y los distintos métodos pedidos en la práctica.
+
+Empecemos por la representación interna de la clase Image:
+
+En principio teníamos la imagen en una matriz, representada internamente con un array de punteros a byte y la propia 
+imagen es un array unidimensional y los punteros del array antes mencionado apuntan al inicio de cada fila de la imagen.
+Además tenemos el número de filas y de columnas. 
+Ahora bien, debido a la implementación del ShuffleRows(), que más adelante explicaremos, hemos añadido un miembro más a la 
+representación interna. Un header, o cabecera que apunta al inicio del array de byte. Esto nos ayuda al momento de 
+destruir el objeto, como se entenderá más adelante en el método ShuffleRows(). 
+
+Otro detalle que merece la pena destacar antes de pasar a detallar los métodos de la práctica, es la modificación que hemos 
+hecho en el método WritePGMImage. En un principio, este método tomaba como parámetro un array unidimensional de datos, 
+de bytes, para escribirlos en el fichero de salida. Pero, de nuevo debido al ShuffleRows(), hemos modificado esto
+ligeramente para que reciba una matriz, es decir un array de punteros a byte. El método funciona de igual forma, sin ningún 
+problema, en todos los casos, pero en el Save() debemos usarlo de forma correcta. 
+
+Ahora sí, pasemos a comentar brevemente los distintos métodos que nos permiten modificar de distintas formas imágenes.
+
+AdjustContrast(): 
+
+Subsample(): 
+
+Crop(): Un detalle a comentar aquí, es la forma en la que hemos gestionado las precondiciones. Se nos pueden dar dos casos:
+el primero es que el inicio de la imagen recortada esté fuera de la original, en ese caso devolvemos una imagen vacía; y el 
+segundo es que la altura o la anchura de la imagen recortada se salga fuera de la original, en cuyo caso simplemente me 
+restrinjo a las medidas de la imagen original, para que la imagen recortada empiece en el píxel establecido por @p nrow y @p ncol
+y termine en los bordes de la imagen original si se saliera. 
+
+Zoom2X(): En este método hemos usado el método Mean para hacer la media entre los píxeles que necesitamos 
+en cada momento.
+
+ShuffleRows(): 
+
+Además hemos añadido el operador relacional == para poder comprobar que nuestro código genera las imágenes correctamente.
+En él simplemente comprobamos primero que tenga las mismas filas y columnas y después vamos píxel a píxel comprobando que 
+tenemos la misma imagen.
 
 # Ejecutables
 
@@ -33,7 +70,7 @@ A RELLENAR POR EL ESTUDIANTE
 Calcula el negativo de una imagen
 
 > __negativo__ \<FichImagenOriginal\> \<FichImagenDestino\>
-@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular
+@param "<FichImagenOriginal>" Imagen PGM a la que se va a calcular el negativo
 @param <FichImagenDestino> Imagen PGM resultado de calcular el negativo
 
 

@@ -276,7 +276,6 @@ public :
      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
    
-    //TODO: ver si aqui tengo que controlar los pre dentro del metodo
     /**
      * @brief Calcula la media de los pixeles de una imagen 
      * entera o de un fragmento de esta.
