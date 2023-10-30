@@ -116,7 +116,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
 
 Image Image::Zoom2X() const{
     int rowsz = this->get_rows()*2-1, colsz = this->get_cols()*2-1;
-    Image zoomed(this->get_rows()*2-1, this->get_cols()*2-1);
+    Image zoomed(rowsz, colsz);
 
     for (int i = 0; i < rowsz; ++i){
         for (int j = 0; j < colsz; ++j){
