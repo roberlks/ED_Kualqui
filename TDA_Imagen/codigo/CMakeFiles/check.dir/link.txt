@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/check.dir/estudiante/src/check.cpp.o -o check  libimage.a 
