@@ -53,7 +53,8 @@ segundo es que la altura o la anchura de la imagen recortada se salga fuera de l
 restrinjo a las medidas de la imagen original, para que la imagen recortada empiece en el píxel establecido por @p nrow y @p ncol
 y termine en los bordes de la imagen original si se saliera. 
 
-Zoom2X(): 
+Zoom2X(): En este método hemos usado el método Mean para hacer la media entre los píxeles que necesitamos 
+en cada momento.
 
 ShuffleRows(): 
 
