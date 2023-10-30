@@ -1,0 +1,1 @@
+CMakeLists.txt not found in /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/ENTREGA ZIP/KUZYSHYN_BASARAB_IRINA_IMAGENES/codigo Select CMakeLists.txt

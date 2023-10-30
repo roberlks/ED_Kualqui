@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_SOURCE_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_BINARY_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -97,14 +97,14 @@ clean: CMakeFiles/doc_doxygen.dir/clean
 CMakeFiles/image.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/image.dir/build.make CMakeFiles/image.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=10,11,12,13,14,15 "Built target image"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=10,11,12,13,14,15 "Built target image"
 .PHONY : CMakeFiles/image.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/image.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 6
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 6
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/image.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/image.dir/rule
 
 # Convenience name for target.
@@ -123,14 +123,14 @@ CMakeFiles/image.dir/clean:
 CMakeFiles/negativo.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/negativo.dir/build.make CMakeFiles/negativo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=16,17 "Built target negativo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=16,17 "Built target negativo"
 .PHONY : CMakeFiles/negativo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/negativo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/negativo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/negativo.dir/rule
 
 # Convenience name for target.
@@ -149,14 +149,14 @@ CMakeFiles/negativo.dir/clean:
 CMakeFiles/subimagen.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/subimagen.dir/build.make CMakeFiles/subimagen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=18,19 "Built target subimagen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=18,19 "Built target subimagen"
 .PHONY : CMakeFiles/subimagen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/subimagen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/subimagen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/subimagen.dir/rule
 
 # Convenience name for target.
@@ -175,14 +175,14 @@ CMakeFiles/subimagen.dir/clean:
 CMakeFiles/zoom.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/zoom.dir/build.make CMakeFiles/zoom.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=20,21 "Built target zoom"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=20,21 "Built target zoom"
 .PHONY : CMakeFiles/zoom.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/zoom.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/zoom.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/zoom.dir/rule
 
 # Convenience name for target.
@@ -201,14 +201,14 @@ CMakeFiles/zoom.dir/clean:
 CMakeFiles/icono.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/icono.dir/build.make CMakeFiles/icono.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=8,9 "Built target icono"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=8,9 "Built target icono"
 .PHONY : CMakeFiles/icono.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/icono.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/icono.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/icono.dir/rule
 
 # Convenience name for target.
@@ -227,14 +227,14 @@ CMakeFiles/icono.dir/clean:
 CMakeFiles/contraste.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/contraste.dir/build.make CMakeFiles/contraste.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=5,6 "Built target contraste"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=5,6 "Built target contraste"
 .PHONY : CMakeFiles/contraste.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/contraste.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/contraste.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/contraste.dir/rule
 
 # Convenience name for target.
@@ -253,14 +253,14 @@ CMakeFiles/contraste.dir/clean:
 CMakeFiles/barajar.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/barajar.dir/build.make CMakeFiles/barajar.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=1,2 "Built target barajar"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=1,2 "Built target barajar"
 .PHONY : CMakeFiles/barajar.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/barajar.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/barajar.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/barajar.dir/rule
 
 # Convenience name for target.
@@ -279,14 +279,14 @@ CMakeFiles/barajar.dir/clean:
 CMakeFiles/check.dir/all: CMakeFiles/image.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/check.dir/build.make CMakeFiles/check.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=3,4 "Built target check"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=3,4 "Built target check"
 .PHONY : CMakeFiles/check.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/check.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/check.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/check.dir/rule
 
 # Convenience name for target.
@@ -305,14 +305,14 @@ CMakeFiles/check.dir/clean:
 CMakeFiles/doc_doxygen.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/doc_doxygen.dir/build.make CMakeFiles/doc_doxygen.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=7 "Built target doc_doxygen"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=7 "Built target doc_doxygen"
 .PHONY : CMakeFiles/doc_doxygen.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/doc_doxygen.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/doc_doxygen.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles 0
 .PHONY : CMakeFiles/doc_doxygen.dir/rule
 
 # Convenience name for target.

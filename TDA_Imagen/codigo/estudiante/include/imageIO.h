@@ -48,8 +48,7 @@ unsigned char *ReadPGMImage (const char *path, int& rows, int& cols);
   * @brief Escribe una imagen de tipo PGM
   *
   * @param path archivo a escribir
-  * @param datos punteros a los @a f x @a c bytes que corresponden a los valores
-  *    de los píxeles de la imagen de grises.
+  * @param datos puntero al array de punteros que apuntan a las @p rows filas de la imagen.
   * @param rows filas de la imagen
   * @param cols columnas de la imagen
   * @return si ha tenido éxito en la escritura.

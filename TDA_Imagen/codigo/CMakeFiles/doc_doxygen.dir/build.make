@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_SOURCE_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_BINARY_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 # Utility rule file for doc_doxygen.
 
@@ -67,8 +67,8 @@ include CMakeFiles/doc_doxygen.dir/compiler_depend.make
 include CMakeFiles/doc_doxygen.dir/progress.make
 
 CMakeFiles/doc_doxygen:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
-	cd /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante && /usr/bin/doxygen /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/Doxyfile
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating API documentation with Doxygen"
+	cd /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante && /usr/bin/doxygen /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/Doxyfile
 
 doc_doxygen: CMakeFiles/doc_doxygen
 doc_doxygen: CMakeFiles/doc_doxygen.dir/build.make
@@ -83,6 +83,6 @@ CMakeFiles/doc_doxygen.dir/clean:
 .PHONY : CMakeFiles/doc_doxygen.dir/clean
 
 CMakeFiles/doc_doxygen.dir/depend:
-	cd /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles/doc_doxygen.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/doc_doxygen.dir/depend
 

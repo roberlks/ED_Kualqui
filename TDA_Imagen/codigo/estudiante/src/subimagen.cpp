@@ -58,7 +58,11 @@ int main(int argc, char* argv[]){
         return 1;
     }
 
-    
+    // Mostrar los parametros de la Imagen
+    cout << endl;
+    cout << "Dimensiones de " << origin << ":" << endl;
+    cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
+
     int row, col, rows_sub, cols_sub;
     row = atoi(argv[3]);
     col = atoi(argv[4]);

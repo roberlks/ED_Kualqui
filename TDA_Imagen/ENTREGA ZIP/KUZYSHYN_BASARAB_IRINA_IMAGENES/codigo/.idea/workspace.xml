@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="3b88400f-23f0-40fb-b479-ee3f5aa5bfd9" name="Changes" comment="Added barajar.cpp, modified method ShuffleRows() to be able to receive a prime number as parameter.">
+      <change beforePath="$PROJECT_DIR$/../../../codigo/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeRuleHashes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/CMakeRuleHashes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/estudiante/src/barajar.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/barajar.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/estudiante/src/check.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/estudiante/src/check.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/check.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/estudiante/src/contraste.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/contraste.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/doc_doxygen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/doc_doxygen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/estudiante/src/icono.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/estudiante/src/icono.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/estudiante/src/icono.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/estudiante/src/icono.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/icono.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/barajar.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/barajar.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/barajar.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/barajar.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/contraste.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/contraste.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/contraste.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/contraste.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/image.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/image.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/image.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/image.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/estudiante/src/imageop.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/image.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/estudiante/src/negativo.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/negativo.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/estudiante/src/subimagen.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/subimagen.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/compiler_depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/compiler_depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/compiler_depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o.d" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/estudiante/src/zoom.cpp.o.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/CMakeFiles/zoom.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/TODO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/barajar" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/barajar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/doc/mainpage.dox" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/doc/mainpage.dox" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/include/imageIO.h" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/include/imageIO.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/barajar.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/barajar.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/check.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/check.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/contraste.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/contraste.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/icono.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/icono.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/image.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/image.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/imageop.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/imageop.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/negativo.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/negativo.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/subimagen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/subimagen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/estudiante/src/zoom.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/estudiante/src/zoom.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/icono" beforeDir="false" afterPath="$PROJECT_DIR$/../../../codigo/icono" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/practica2.cbp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../codigo/salidaSHUFFLED.pgm" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="alqui" />
+                    <option name="lastUsedInstant" value="1698340623" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="main" />
+                    <option name="lastUsedInstant" value="1698340602" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="Kuzyshin" />
+                    <option name="lastUsedInstant" value="1698139547" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/../.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
+  <component name="GithubProjectSettings">
+    <option name="branchProtectionPatterns">
+      <list>
+        <option value="main" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="2.2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2WFOIJKn66IGJSdfyYsvPJGOuD9" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;alqui&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;CMakeSettings&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/estudiante/src" />
+      <recent name="$PROJECT_DIR$/estudiante/src/mains" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="BIBTEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-bibtex>
+        <compiler />
+        <compiler-path />
+        <compiler-arguments />
+        <envs />
+        <main-file>$USER_HOME$</main-file>
+        <aux-dir>$USER_HOME$</aux-dir>
+      </texify-bibtex>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="EXTERNAL_TOOL_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-external>
+        <program>PYTHONTEX</program>
+        <main-file />
+        <work-dir />
+      </texify-external>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify>
+        <compiler>PDFLATEX</compiler>
+        <compiler-path />
+        <sumatra-path />
+        <pdf-viewer>EVINCE</pdf-viewer>
+        <viewer-command />
+        <compiler-arguments />
+        <envs />
+        <main-file />
+        <output-path>{projectDir}/out</output-path>
+        <auxil-path>{projectDir}/auxil</auxil-path>
+        <compile-twice>false</compile-twice>
+        <output-format>PDF</output-format>
+        <latex-distribution>TEXLIVE</latex-distribution>
+        <has-been-run>false</has-been-run>
+        <bib-run-config>[]</bib-run-config>
+        <makeindex-run-config>[]</makeindex-run-config>
+      </texify>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="MAKEINDEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+      <texify-makeindex>
+        <program>MAKEINDEX</program>
+        <main-file />
+        <command-line-args />
+        <work-dir />
+      </texify-makeindex>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3b88400f-23f0-40fb-b479-ee3f5aa5bfd9" name="Changes" comment="" />
+      <created>1696324781629</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1696324781629</updated>
+      <workItem from="1696324781632" duration="598000" />
+      <workItem from="1696325403745" duration="3270000" />
+      <workItem from="1696339134317" duration="1609000" />
+      <workItem from="1696694447926" duration="694000" />
+      <workItem from="1698137688013" duration="589000" />
+      <workItem from="1698337836659" duration="2801000" />
+      <workItem from="1698600946592" duration="3624000" />
+      <workItem from="1698688145569" duration="129000" />
+      <workItem from="1698688358228" duration="3000" />
+      <workItem from="1698688377698" duration="319000" />
+    </task>
+    <task id="LOCAL-00001" summary="Aded Contraste.cpp. File description and comments missing.">
+      <option name="closed" value="true" />
+      <created>1698338679685</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698338679685</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Added barajar.cpp, modified method ShuffleRows() to be able to receive a prime number as parameter.">
+      <option name="closed" value="true" />
+      <created>1698339767241</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1698339767241</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="alqui" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Aded Contraste.cpp. File description and comments missing." />
+    <MESSAGE value="Added barajar.cpp, modified method ShuffleRows() to be able to receive a prime number as parameter." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added barajar.cpp, modified method ShuffleRows() to be able to receive a prime number as parameter." />
+  </component>
+</project>

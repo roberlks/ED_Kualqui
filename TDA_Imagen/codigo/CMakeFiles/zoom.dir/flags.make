@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include
+CXX_INCLUDES = -I/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include
 
 CXX_FLAGS = -std=gnu++14
 

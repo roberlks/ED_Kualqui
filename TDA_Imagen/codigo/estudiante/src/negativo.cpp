@@ -37,7 +37,6 @@ int main (int argc, char *argv[]){
     cerr << "Error: Numero incorrecto de parametros.\n";
     cerr << "Uso: negativo <FichImagenOriginal> <FichImagenDestino>\n";
     exit (1);
-    //! por que esto es exit y no return 
   }
 
   // Obtener argumentos

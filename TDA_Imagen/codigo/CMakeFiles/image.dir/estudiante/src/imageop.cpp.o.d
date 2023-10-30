@@ -1,5 +1,5 @@
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -153,6 +153,6 @@ CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls-narrow.h \
  /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/image.h \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/image.h \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
  /usr/include/c++/11/cassert /usr/include/assert.h

@@ -1,5 +1,5 @@
 CMakeFiles/image.dir/estudiante/src/image.cpp.o: \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/cstring \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -147,6 +147,6 @@ CMakeFiles/image.dir/estudiante/src/image.cpp.o: \
  /usr/include/c++/11/bits/basic_ios.tcc \
  /usr/include/c++/11/bits/ostream.tcc /usr/include/c++/11/istream \
  /usr/include/c++/11/bits/istream.tcc \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/image.h \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/image.h \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h

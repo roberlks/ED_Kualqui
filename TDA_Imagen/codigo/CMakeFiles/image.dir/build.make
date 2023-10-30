@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_SOURCE_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+CMAKE_BINARY_DIR = /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo
 
 # Include any dependencies generated for this target.
 include CMakeFiles/image.dir/depend.make
@@ -72,72 +72,72 @@ include CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/image.cpp.o: CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/image.cpp.o: estudiante/src/image.cpp
 CMakeFiles/image.dir/estudiante/src/image.cpp.o: CMakeFiles/image.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/image.dir/estudiante/src/image.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/image.cpp.o -MF CMakeFiles/image.dir/estudiante/src/image.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/image.cpp.o -c /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/image.dir/estudiante/src/image.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/image.cpp.o -MF CMakeFiles/image.dir/estudiante/src/image.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/image.cpp.o -c /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp
 
 CMakeFiles/image.dir/estudiante/src/image.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/image.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp > CMakeFiles/image.dir/estudiante/src/image.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp > CMakeFiles/image.dir/estudiante/src/image.cpp.i
 
 CMakeFiles/image.dir/estudiante/src/image.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/image.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp -o CMakeFiles/image.dir/estudiante/src/image.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/image.cpp -o CMakeFiles/image.dir/estudiante/src/image.cpp.s
 
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: estudiante/src/imageop.cpp
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.o: CMakeFiles/image.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/imageop.cpp.o -MF CMakeFiles/image.dir/estudiante/src/imageop.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o -c /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/image.dir/estudiante/src/imageop.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/imageop.cpp.o -MF CMakeFiles/image.dir/estudiante/src/imageop.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/imageop.cpp.o -c /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp
 
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/imageop.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp > CMakeFiles/image.dir/estudiante/src/imageop.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp > CMakeFiles/image.dir/estudiante/src/imageop.cpp.i
 
 CMakeFiles/image.dir/estudiante/src/imageop.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/imageop.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp -o CMakeFiles/image.dir/estudiante/src/imageop.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageop.cpp -o CMakeFiles/image.dir/estudiante/src/imageop.cpp.s
 
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: estudiante/src/imageIO.cpp
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: CMakeFiles/image.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o -MF CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o -c /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o -MF CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o -c /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp
 
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/imageIO.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp > CMakeFiles/image.dir/estudiante/src/imageIO.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp > CMakeFiles/image.dir/estudiante/src/imageIO.cpp.i
 
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/imageIO.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp -o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp -o CMakeFiles/image.dir/estudiante/src/imageIO.cpp.s
 
 CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: estudiante/src/contraste.cpp
 CMakeFiles/image.dir/estudiante/src/contraste.cpp.o: CMakeFiles/image.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image.dir/estudiante/src/contraste.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/contraste.cpp.o -MF CMakeFiles/image.dir/estudiante/src/contraste.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o -c /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/image.dir/estudiante/src/contraste.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/contraste.cpp.o -MF CMakeFiles/image.dir/estudiante/src/contraste.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.o -c /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp
 
 CMakeFiles/image.dir/estudiante/src/contraste.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/contraste.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp > CMakeFiles/image.dir/estudiante/src/contraste.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp > CMakeFiles/image.dir/estudiante/src/contraste.cpp.i
 
 CMakeFiles/image.dir/estudiante/src/contraste.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/contraste.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/contraste.cpp -o CMakeFiles/image.dir/estudiante/src/contraste.cpp.s
 
 CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: CMakeFiles/image.dir/flags.make
 CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: estudiante/src/barajar.cpp
 CMakeFiles/image.dir/estudiante/src/barajar.cpp.o: CMakeFiles/image.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/image.dir/estudiante/src/barajar.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/barajar.cpp.o -MF CMakeFiles/image.dir/estudiante/src/barajar.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.o -c /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/image.dir/estudiante/src/barajar.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/image.dir/estudiante/src/barajar.cpp.o -MF CMakeFiles/image.dir/estudiante/src/barajar.cpp.o.d -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.o -c /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp
 
 CMakeFiles/image.dir/estudiante/src/barajar.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/image.dir/estudiante/src/barajar.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp > CMakeFiles/image.dir/estudiante/src/barajar.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp > CMakeFiles/image.dir/estudiante/src/barajar.cpp.i
 
 CMakeFiles/image.dir/estudiante/src/barajar.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/image.dir/estudiante/src/barajar.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/barajar.cpp -o CMakeFiles/image.dir/estudiante/src/barajar.cpp.s
 
 # Object files for target image
 image_OBJECTS = \
@@ -157,7 +157,7 @@ libimage.a: CMakeFiles/image.dir/estudiante/src/contraste.cpp.o
 libimage.a: CMakeFiles/image.dir/estudiante/src/barajar.cpp.o
 libimage.a: CMakeFiles/image.dir/build.make
 libimage.a: CMakeFiles/image.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libimage.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX static library libimage.a"
 	$(CMAKE_COMMAND) -P CMakeFiles/image.dir/cmake_clean_target.cmake
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/image.dir/link.txt --verbose=$(VERBOSE)
 
@@ -170,6 +170,6 @@ CMakeFiles/image.dir/clean:
 .PHONY : CMakeFiles/image.dir/clean
 
 CMakeFiles/image.dir/depend:
-	cd /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles/image.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/CMakeFiles/image.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/image.dir/depend
 

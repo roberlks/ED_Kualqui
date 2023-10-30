@@ -1,5 +1,5 @@
 CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src/imageIO.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/string \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -126,7 +126,7 @@ CMakeFiles/image.dir/estudiante/src/imageIO.cpp.o: \
  /usr/include/c++/11/bits/functional_hash.h \
  /usr/include/c++/11/bits/hash_bytes.h \
  /usr/include/c++/11/bits/basic_string.tcc \
- /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
+ /home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include/imageIO.h \
  /usr/include/c++/11/fstream /usr/include/c++/11/istream \
  /usr/include/c++/11/ios /usr/include/c++/11/exception \
  /usr/include/c++/11/bits/exception_ptr.h \
