@@ -1,0 +1,11 @@
+<map id="include/image.h" name="include/image.h">
+<area shape="rect" id="node1" title="Cabecera para la clase Image." alt="" coords="495,5,621,32"/>
+<area shape="rect" id="node2" href="$check_8cpp.html" title="Comprueba si dos imagenes son iguales." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$contraste_8cpp.html" title="Ajusta el contraste de una imagen PGM (estiramiento del histograma)" alt="" coords="141,80,274,107"/>
+<area shape="rect" id="node4" href="$icono_8cpp.html" title="Calcula el icono de una imagen PGM." alt="" coords="298,80,405,107"/>
+<area shape="rect" id="node5" href="$image_8cpp.html" title="Fichero con definiciones para los métodos primitivos de la clase Image." alt="" coords="429,80,543,107"/>
+<area shape="rect" id="node6" href="$imageop_8cpp.html" title="Fichero con definiciones para el resto de métodos de la clase Image." alt="" coords="567,80,696,107"/>
+<area shape="rect" id="node7" href="$negativo_8cpp.html" title="Baraja de forma pseudoaleatoria una imagen PGM." alt="" coords="720,80,849,107"/>
+<area shape="rect" id="node8" href="$subimagen_8cpp.html" title="Recorta una imagen PGM." alt="" coords="874,80,1018,107"/>
+<area shape="rect" id="node9" href="$zoom_8cpp.html" title="Recorta una imagen PGM y le hace zoom." alt="" coords="1043,80,1151,107"/>
+</map>

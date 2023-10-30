@@ -1,0 +1,4 @@
+Cannot generate into /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo
+It was created with incompatible generator 'Unix Makefiles'
+
+Please either delete it manually or select another generation directory

@@ -141,6 +141,8 @@ void Image::ShuffleRows(int _p) {
         int newr = (r * p) % this->get_rows();
         tmp_pixels_dir[r] = this->img[newr];
     }
+
+    delete[] img;
     this->img = tmp_pixels_dir;
 }
 
