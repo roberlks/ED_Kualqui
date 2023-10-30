@@ -26,9 +26,18 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
      *           e2-255 -> s2-255
      */
 
+
+    //* @pre 0 <= ( @p in1, @p in2, @p out1, @p out2) <= 255
+    //* @pre @p in1 < @p in2    @p out1 < @p out2
+    if (in1 < 0 || in1 > 255 || in2 < 0 || in2 > 255 || out1 < 0 || out1 > 255 || out2 < 0 || out2 > 255
+        || in1 > in2 || out1 > out2){
+        std::cerr << "Error: Valor de entrada/salida inválido." << std::endl;
+        return;
+    }
+
+
     // Calcular constantes
     // M = (max-min)/(b-a)
-    // TODO Peligro con los tipos de las constantes.
     const double M1 = (double)(out1)/(double)(in1);
     const double M2 = (double)(out2-out1)/(double)(in2-in1);
     const double M3 = (double)(255-out2)/(double)(255-in2);
@@ -61,32 +70,41 @@ void Image::AdjustContrast(byte in1, byte in2, byte out1, byte out2) {
 
 double Image::Mean(int i, int j, int height, int width) const{
     double sum = 0;
+
+    // Check the preconditions
+    if (i > this->get_rows() || j > this->get_cols()){
+        return 0;
+    }
+
+    height = ((this->get_rows() - i) > height) ? height : (this->get_rows() - i);
+    width = ((this->get_cols() - j) > width) ? width : (this->get_cols() - j);
+    
+    // Sum of the pixels for the mean
     for (int x = i; x < i+height; ++x){
         for (int y = j; y < j+width; ++y){
             sum += this->get_pixel(x,y);
         }
     }
-    return sum / (height*width);
+
+    double mean = (height*width == 0)? 0 : sum / (height*width);
+    return mean;
 }
 
-
-
-//! Ver si lo siguiente esta decente asi
-// Las precondiciones las he comprobado de la siguiente manera:
-// Si el inicio de la recortada se salia de la original devuelvo una imagen vacia
-// Si esta dentro pero se sale por la anchura o altura, la recorto con el mismo inicio
-// pero acabando en los filos de la imagen, aunque la altura o anchura ps es
-// mas pequeña de lo que te pide pero al menos no hay valores extraños
 Image Image::Crop(int nrow, int ncol, int height, int width) const{
     Image cropped;
-    if (nrow > this->get_rows() || ncol > this->get_cols()){
+
+    // Check the preconditions
+    if (nrow >= this->get_rows() || ncol >= this->get_cols()){
         return cropped;
     }
 
     height = ((this->get_rows() - nrow) > height) ? height : (this->get_rows() - nrow);
     width = ((this->get_cols() - ncol) > width) ? width : (this->get_cols() - ncol);
+
+    // Create an image with the size of the cropped image
     cropped = Image(height, width);
 
+    // Copy the needed part of the original image
     for (int i = 0; i < height; ++i){
         for (int j = 0; j < width; ++j){
             cropped.set_pixel(i, j, this->get_pixel(i+nrow, j+ncol));
@@ -98,7 +116,7 @@ Image Image::Crop(int nrow, int ncol, int height, int width) const{
 
 Image Image::Zoom2X() const{
     int rowsz = this->get_rows()*2-1, colsz = this->get_cols()*2-1;
-    Image zoomed(this->get_rows()*2-1, this->get_cols()*2-1);
+    Image zoomed(rowsz, colsz);
 
     for (int i = 0; i < rowsz; ++i){
         for (int j = 0; j < colsz; ++j){
@@ -109,17 +127,20 @@ Image Image::Zoom2X() const{
     return zoomed;
 }
 
-void Image::ShuffleRows() {
-    const int p = 9973;
-    
+void Image::ShuffleRows(int _p) {
+    const int p = _p;
 
-    byte **tmp_pixels_dir;
+    //* @pre rows < @p _p (o en su defecto < 9973)
+    if (p < this->get_rows()){
+        std::cerr << "Error, número primo no valido. (Metodo ShuffleRows())";
+        return;
+    }
 
+    byte **tmp_pixels_dir = new byte*[this->get_rows()];
     for (int r = 0; r < this->get_rows(); r++) {
         int newr = (r * p) % this->get_rows();
         tmp_pixels_dir[r] = this->img[newr];
     }
-
     this->img = tmp_pixels_dir;
 
 }

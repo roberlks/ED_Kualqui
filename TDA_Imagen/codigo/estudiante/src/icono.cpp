@@ -23,9 +23,19 @@ int main(int argc, char *argv[]){
     fich_rdo = argv[2];
     factor = stoi((std::string)(argv[3]));
 
+
     Image img_orig;
+
+
+
+
     if (!img_orig.Load(fich_orig)){
         std::cerr << "Error en la carga de la imagen desde " << fich_orig << std::endl;
+        return 1;
+    }
+    if (factor <= 0){
+        std::cerr << "Error: El factor de submuestreo debe ser mayor que 0.\n";
+        img_orig.Save(fich_rdo);
         return 1;
     }
     Image img_res = img_orig.Subsample(factor);

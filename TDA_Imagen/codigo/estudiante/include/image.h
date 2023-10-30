@@ -39,21 +39,6 @@ enum LoadResult: unsigned char {
 **/
 
 class Image{
-
-    /**
-         @page page_repImagen Representación del TDA Imagen
-
-         @section sec_Image_A Título A
-
-
-         Contenido de la sección A.
-
-         @section sec_Image_B Título  B
-
-         Contenido de la sección B.
-
-         Referencia a la \ref sec_Image_A
-       **/
 private :
 
     /**
@@ -276,7 +261,6 @@ public :
      */
     void AdjustContrast (byte in1, byte in2, byte out1, byte out2);
    
-    //TODO: ver si aqui tengo que controlar los pre dentro del metodo
     /**
      * @brief Calcula la media de los pixeles de una imagen 
      * entera o de un fragmento de esta.
@@ -332,15 +316,18 @@ public :
     /**
      *
      * @brief Baraja pseudoaleatoriamente las filas de una imagen.
-     * @pre rows < 9973
+     * @pre rows < @p _p (o en su defecto < 9973)
+     * @pre @p _p is a prime number, >= rows
      * @post EL objeto que llama al método contiene ahora una nueva imagen igual
      * que la anterior, pero con las filas ordenadas según el siguiente algoritmo:
      * \f[
      * \overset{^}{r} = (r \cdot p) % rows
      * \f]
+     * @param _p El número primo que se usará para barajar las filas
+     *
      */
 
-    void ShuffleRows(); //ROB
+    void ShuffleRows(int _p = 9973); //ROB
 } ;
 
     /**
