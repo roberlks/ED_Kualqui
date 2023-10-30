@@ -1,0 +1,6 @@
+PROJECT_NAME           = "Práctica 1. Imágenes"
+OUTPUT_DIRECTORY       = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/doc_doxygen/
+INPUT                  = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/include /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/src /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/doc
+GENERATE_LATEX         = NO
+IMAGE_PATH             = /home/uwu/Documents/EDpracticas/ED_Kualqui/TDA_Imagen/codigo/estudiante/doc
+EXTRACT_PRIVATE        = YES

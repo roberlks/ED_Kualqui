@@ -1,6 +1,6 @@
 /**
  * @file check.cpp
- * @brief Calcula el negativo de una imagen PGM
+ * @brief Comprueba si dos imagenes son iguales.
  * @authors Irina Kuzyshyn, Roberto Gonzalez
  *
  * Este programa comprueba que dos imagenes sean iguales y toma tres parámetros de entrada:

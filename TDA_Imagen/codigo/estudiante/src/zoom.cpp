@@ -1,6 +1,6 @@
 /**
  * @file zoom.cpp
- * @brief Recorta una imagen PGM
+ * @brief Recorta una imagen PGM y le hace zoom
  * @authors Irina Kuzyshyn, Roberto Gonzalez
  *
  * Este programa hace zoom a una imagen y toma 6 parametros de entrada
@@ -55,6 +55,11 @@ int main(int argc, char* argv[]){
         cerr << "Terminando la ejecucion del programa." << endl;
         return 1;
     }
+
+    // Mostrar los parametros de la Imagen
+    cout << endl;
+    cout << "Dimensiones de " << origin << ":" << endl;
+    cout << "   Imagen   = " << image.get_rows()  << " filas x " << image.get_cols() << " columnas " << endl;
 
     int row, col, side;
     row = atoi(argv[3]);

@@ -1,3 +1,7 @@
-./TDA_Imagen/codigo/cmake-build-debug
+./TDA_Imagen/codigo/cmake-build-debug/
 ./TDA_Imagen/codigo/.idea
 ./TDA_Imagen/codigo/Testing
+.vscode/
+./TDA_Imagen/codigo/.vscode/
+./TDA_Imagen/codigo/salida*
+./TDA_Imagen/codigo/build

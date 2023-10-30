@@ -24,15 +24,15 @@ void Image::Allocate(int nrows, int ncols, byte * buffer){
 
     if (buffer != nullptr) {
         img[0] = buffer;
-        header = buffer;
     }
     else{
         img[0] = new byte [rows * cols];
-        header = img[0];
     }
 
     for (int i=1; i < rows; i++)
         img[i] = img[i-1] + cols;
+
+    header = img[0];
 }
 
 // Función auxiliar para inicializar imágenes con valores por defecto o a partir de un buffer de datos
@@ -40,6 +40,7 @@ void Image::Initialize (int nrows, int ncols, byte * buffer){
     if ((nrows == 0) || (ncols == 0)){
         rows = cols = 0;
         img = nullptr;
+        header = nullptr;
     }
     else Allocate(nrows, ncols, buffer);
 }
