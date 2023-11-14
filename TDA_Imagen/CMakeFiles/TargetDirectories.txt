@@ -1,0 +1,11 @@
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/image.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/negativo.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/subimagen.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/zoom.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/icono.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/contraste.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/barajar.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/check.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/doc_doxygen.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/edit_cache.dir
+/home/alquitran/Documents/Clase/23-24/NOTES23-24/ED/ClasesPracticas/ED_Kualqui/TDA_Imagen/CMakeFiles/rebuild_cache.dir
