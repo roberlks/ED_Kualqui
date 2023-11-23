@@ -63,7 +63,7 @@ bool LeerImagenPPM (const char nombre[], int& filas, int& columnas, unsigned cha
   */
 bool EscribirImagenPPM (const char nombre[], const unsigned char datos[], int f, int c);
 
-/**
+ /**
   * @brief Lee una imagen de tipo PGM sobre memoria reservada
   *
   * @param nombre nombre del archivo a leer
