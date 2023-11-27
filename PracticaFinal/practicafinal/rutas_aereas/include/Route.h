@@ -1,97 +1,67 @@
-//
-// Created by alquitran on 27/11/23.
-//
+/**
+ * @file Route.h
+ * @brief Fichero con definiciones para la clase Route
+ *
+ */
+
+
 
 #ifndef PRACTICAFINAL_ROUTE_H
 #define PRACTICAFINAL_ROUTE_H
 
-#include"Coord.h"
+#include "Countries.h"
+#include "Countries.h" // Include the header file for the Countries class
 #include <iostream>
-#include <list>
-
-
 
 class Route {
 private:
     std::string id;
-    std::list<Coord> coords;
+    Countries countries; // Use Countries object instead of std::list<Countries>
 public:
     /**
-     * @brief Default constructor
-     *
-     */
-    Route();
-    /**
      * @brief Constructor with parameters
-     *
+     * @note Acts as default constructor if no parameters are given
      * @param id
-     * @param coords
+     * @param countries
      */
-    Route(std::string id, std::list<Coord> coords);
+    explicit Route(std::string _id = "", const Countries& _countries = Countries());
 
     /**
      * @brief Get the Id object
-     *
      * @return std::string
      */
     std::string getId() const;
 
     /**
-     * @brief Get the Coords object
-     *
-     * @return std::list<Coord>
+     * @brief Get the Countries object
+     * @return Countries
      */
-    std::list<Coord> getCoords() const;
+    Countries getCountries() const;
 
     /**
      * @brief Set the Id object
-     *
      * @param id
      */
     void setId(std::string id);
 
     /**
-     * @brief Set the Coords object
-     *
-     * @param coords
+     * @brief Set the Countries object
+     * @param countries
      */
-    void setCoords(std::list<Coord> coords);
+    void setCountries(const Countries& countries);
 
     /**
-     * @brief Add coords to the route
-     *
-     * @param coord coord to add.
-     * @return true if coords were added, false otherwise.
-     *
+     * @brief Add countries to the route
+     * @param countries Countries object to add.
      */
-    bool addCoords(Coord coord);
+    void addCountries(const Countries& countries);
+
 
     /**
-     * @brief Overload method addCoords
-     *
-     * @param coords list of coords to add.
-     * @return true if coords were added, false otherwise.
+     * @brief Remove countries from the route
+     * @param countries Countries object containing the countries to remove.
      */
-    bool addCoords(std::list<Coord> coords);
-
-    /**
-     * @brief Remove coords from the route
-     *
-     * @param coord coord to remove.
-     * @return true if coords were removed, false otherwise.
-     */
-    bool removeCoords(Coord coord);
-
-    /**
-     * @brief Overload method removeCoords
-     *
-     * @param coords list of coords to remove.
-     * @return true if coords were removed, false otherwise.
-     */
-    bool removeCoords(std::list<Coord> coords);
-
-
+    void removeCountries(const Countries& countries);
 };
-
 
 #endif //PRACTICAFINAL_ROUTE_H
