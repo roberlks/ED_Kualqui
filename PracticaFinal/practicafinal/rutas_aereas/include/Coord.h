@@ -1,0 +1,12 @@
+
+
+#ifndef PRACTICAFINAL_COORD_H
+#define PRACTICAFINAL_COORD_H
+
+
+class Coord {
+
+};
+
+
+#endif //PRACTICAFINAL_COORD_H
