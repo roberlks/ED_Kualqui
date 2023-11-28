@@ -4,11 +4,14 @@
 
 #include "Coord.h"
 
+
 Coord::Coord(double lat, double lon) : latitude(lat), longitude(lon){}
 
 Coord::Coord(const Coord &other){
     *this = other;
 }
+
+
 
 Coord& Coord::operator=(const Coord &other){
     this->latitude = other.Latitude();
@@ -36,4 +39,10 @@ double& Coord::Longitude(){
 Coord Coord::midpoint(const Coord &other) const{
     return Coord((this->Latitude() + other.Latitude())/2, (this->Longitude() + other.Longitude())/2);
 }
+
+bool Coord::operator==(const Coord &other) const{
+    return (this->Latitude() == other.Latitude() && this->Longitude() == other.Longitude());
+}
+
+
 

@@ -12,26 +12,38 @@ add_library(image ${BASE_FOLDER}/src/imagen.cpp  ${BASE_FOLDER}/src/imagenES.cpp
         rutas_aereas/include/Countries.h
         rutas_aereas/src/RouteRep.cpp
         rutas_aereas/include/RouteRep.h
-        rutas_aereas/include/Countries.h)
+        rutas_aereas/include/Countries.h
+        rutas_aereas/include/Country.h
+        rutas_aereas/include/Coord.h
+        rutas_aereas/src/Coord.cpp)
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/pruebarotacion.cpp)
 add_executable(pruebarotacion ${BASE_FOLDER}/src/pruebarotacion.cpp
         rutas_aereas/src/Route.cpp
-        rutas_aereas/include/Route.h)
+        rutas_aereas/include/Route.h
+        rutas_aereas/include/Country.h
+        rutas_aereas/include/Coord.h
+        rutas_aereas/src/Coord.cpp)
 target_link_libraries(pruebarotacion LINK_PUBLIC image)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/pruebapegado.cpp)
 add_executable(pruebapegado ${BASE_FOLDER}/src/pruebapegado.cpp
         rutas_aereas/src/Route.cpp
-        rutas_aereas/include/Route.h)
+        rutas_aereas/include/Route.h
+        rutas_aereas/include/Country.h
+        rutas_aereas/include/Coord.h
+        rutas_aereas/src/Coord.cpp)
 target_link_libraries(pruebapegado LINK_PUBLIC image)
 endif()
 
 if (EXISTS ${CMAKE_SOURCE_DIR}/${BASE_FOLDER}/src/ruta_aerea.cpp)
 add_executable(ruta_aerea ${BASE_FOLDER}/src/ruta_aerea.cpp
         rutas_aereas/src/Route.cpp
-        rutas_aereas/include/Route.h)
+        rutas_aereas/include/Route.h
+        rutas_aereas/include/Country.h
+        rutas_aereas/include/Coord.h
+        rutas_aereas/src/Coord.cpp)
 target_link_libraries(ruta_aerea LINK_PUBLIC image)
 endif()
 

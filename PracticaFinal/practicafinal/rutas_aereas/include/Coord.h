@@ -16,6 +16,8 @@ public:
 
     Coord(const Coord &other);
 
+    ~Coord() = default;
+
     Coord& operator=(const Coord &other);
 
     const double& Longitude() const;
@@ -30,6 +32,8 @@ public:
 
     //! Ver como hacer esto bien
     double orientation(const Coord &other) const;
+
+    bool operator==(const Coord &other) const;
 };
 
 

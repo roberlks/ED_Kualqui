@@ -1,67 +1,58 @@
-/**
- * @file Route.h
- * @brief Fichero con definiciones para la clase Route
- *
- */
-
-
-
 #ifndef PRACTICAFINAL_ROUTE_H
 #define PRACTICAFINAL_ROUTE_H
 
-#include "Countries.h"
-#include "Countries.h" // Include the header file for the Countries class
+#include <list> // Include the header file for std::list
 #include <iostream>
+#include "Coord.h" // Include the header file for the Coord class
 
 class Route {
 private:
     std::string id;
-    Countries countries; // Use Countries object instead of std::list<Countries>
+    std::list<Coord> pois; // Use std::list<Coord> instead of Countries
 public:
     /**
      * @brief Constructor with parameters
      * @note Acts as default constructor if no parameters are given
-     * @param id
-     * @param countries
+     * @param _id The ID of the route
+     * @param _pois The list of points of interest (Coord objects)
      */
-    explicit Route(std::string _id = "", const Countries& _countries = Countries());
+    explicit Route(std::string _id = "", const std::list<Coord>& _pois = std::list<Coord>());
 
     /**
-     * @brief Get the Id object
+     * @brief Get the ID of the route
      * @return std::string
      */
     std::string getId() const;
 
     /**
-     * @brief Get the Countries object
-     * @return Countries
+     * @brief Get the list of points of interest (Coord objects) in the route
+     * @return std::list<Coord>
      */
-    Countries getCountries() const;
+    std::list<Coord> getPois() const;
 
     /**
-     * @brief Set the Id object
-     * @param id
+     * @brief Set the ID of the route
+     * @param id The ID to set
      */
     void setId(std::string id);
 
     /**
-     * @brief Set the Countries object
-     * @param countries
+     * @brief Set the list of points of interest (Coord objects) in the route
+     * @param pois The list of points of interest to set
      */
-    void setCountries(const Countries& countries);
+    void setPois(const std::list<Coord>& pois);
 
     /**
-     * @brief Add countries to the route
-     * @param countries Countries object to add.
+     * @brief Add points of interest (Coord objects) to the route
+     * @param pois The list of points of interest to add
      */
-    void addCountries(const Countries& countries);
-
+    void addPois(const std::list<Coord>& pois);
 
     /**
-     * @brief Remove countries from the route
-     * @param countries Countries object containing the countries to remove.
+     * @brief Remove points of interest (Coord objects) from the route
+     * @param pois The list of points of interest to remove
      */
-    void removeCountries(const Countries& countries);
+    void removePois(const std::list<Coord>& _pois)
 };
 
 #endif //PRACTICAFINAL_ROUTE_H
