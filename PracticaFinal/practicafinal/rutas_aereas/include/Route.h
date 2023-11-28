@@ -52,7 +52,7 @@ public:
      * @brief Remove points of interest (Coord objects) from the route
      * @param pois The list of points of interest to remove
      */
-    void removePois(const std::list<Coord>& _pois)
+    void removePois(const std::list<Coord>& _pois);
 };
 
 #endif //PRACTICAFINAL_ROUTE_H
