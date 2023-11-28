@@ -16,7 +16,7 @@ Coord& Coord::operator=(const Coord &other){
 
     return *this;
 }
-
+//!Cambiar esto
 const double& Coord::Latitude() const{
     return latitude;
 }
@@ -37,3 +37,14 @@ Coord Coord::midpoint(const Coord &other) const{
     return Coord((this->Latitude() + other.Latitude())/2, (this->Longitude() + other.Longitude())/2);
 }
 
+//? Te dan los puntos distintos en la ruta y en el pais
+std::istream & operator>>(std::istream & is, Coord & point){
+    char separator;
+    is >> separator;
+    is >> point.latitude >> separator >> point.longitude >> separator;
+    return is;
+}
+
+std::ostream & operator<<(std::ostream & is, const Coord & point){
+    
+}

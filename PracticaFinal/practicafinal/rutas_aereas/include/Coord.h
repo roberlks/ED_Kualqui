@@ -5,6 +5,7 @@
 #ifndef PRACTICAFINAL_COORD_H
 #define PRACTICAFINAL_COORD_H
 
+#include <fstream>
 
 class Coord{
 private:
@@ -12,7 +13,7 @@ private:
     double longitude;
 
 public:
-    Coord(double lat = 0, double lon = 0);
+    explicit Coord(double lat = 0, double lon = 0);
 
     Coord(const Coord &other);
 
@@ -30,6 +31,9 @@ public:
 
     //! Ver como hacer esto bien
     double orientation(const Coord &other) const;
+
+    friend std::istream & operator>>(std::istream & is, Coord & point);
+    friend std::ostream & operator<<(std::ostream & is, const Coord & point);
 };
 
 
