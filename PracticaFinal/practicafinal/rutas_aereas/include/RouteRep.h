@@ -60,8 +60,8 @@ public:
      * @post The RouteRep object has been filled with the data from the ifstream
      * @note If the route object already has data, it will be appended to the end.
      */
-    friend std::istream  & operator>>(std::ifstream& ifs, RouteRep& _routeRep);
-
+    friend std::istream & operator>>(std::istream& is, RouteRep& _routeRep);
+    friend std::ostream & operator <<(RouteRep& _routeRep, std::ostream& os);
 
     /**
      * @brief iterator class

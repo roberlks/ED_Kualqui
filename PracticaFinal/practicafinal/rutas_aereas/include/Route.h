@@ -3,6 +3,7 @@
 
 #include <list> // Include the header file for std::list
 #include <iostream>
+#include <fstream>
 #include "Coord.h" // Include the header file for the Coord class
 
 class Route {
@@ -53,6 +54,8 @@ public:
      * @param pois The list of points of interest to remove
      */
     void removePois(const std::list<Coord>& _pois);
+
+    friend std::ostream & operator<<(std::ostream & os, const Route &R);
 };
 
 #endif //PRACTICAFINAL_ROUTE_H

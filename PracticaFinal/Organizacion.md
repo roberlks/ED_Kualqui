@@ -15,7 +15,7 @@ IRINA
 ALQ
 ## Clase Ruta
 1.  ### Clase punto
-2. Leer y almacenar rutas (nombre, paises por los que pasa (puntos))
+2. Leer y almacenar rutas (nombre, Conjunto de puntos que contiene)
 3. Pintar una imagen con los paises, y los aviones (tres entre cada dos puntos)
 
 ## Clase Almacen de Rutas

@@ -145,7 +145,7 @@ class Imagen{
     void Copiar(const Imagen &I);
 
   public:
-    Imagen();
+   Imagen();
    
    Imagen(int f,int c);
    

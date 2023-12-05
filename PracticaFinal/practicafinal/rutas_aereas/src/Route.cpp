@@ -38,3 +38,12 @@ void Route::removePois(const std::list<Coord>& _pois) {
         this->pois.remove(poi);
     }
 }
+
+std::ostream & operator<<(std::ostream & os, const Route &R){
+    os << R.id << " " << R.pois.size() << " ";
+    for (const Coord& poi : R.pois) {
+        os << poi << " ";
+    }
+    return os;
+}
+

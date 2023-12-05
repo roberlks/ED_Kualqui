@@ -55,5 +55,6 @@ std::istream & operator>>(std::istream & is, Coord & point){
 }
 
 std::ostream & operator<<(std::ostream & is, const Coord & point){
-    
+    is << "(" << point.latitude << "," << point.longitude << ")";
+    return is;
 }
