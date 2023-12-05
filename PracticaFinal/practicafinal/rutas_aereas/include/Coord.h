@@ -21,13 +21,15 @@ public:
 
     Coord& operator=(const Coord &other);
 
-    const double& Longitude() const;
+    //Getters
 
-    const double& Latitude() const;
+    double getLatitude() const;
+    double getLongitude() const;
 
-    double& Longitude();
+    // Setters
 
-    double& Latitude();
+    void setLatitude(double lat);
+    void setLongitude(double lon);
 
     Coord midpoint(const Coord &other) const;
 

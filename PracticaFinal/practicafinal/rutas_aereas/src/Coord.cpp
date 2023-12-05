@@ -2,6 +2,7 @@
 // Created by uwu on 27/11/23.
 //
 
+#include <cmath>
 #include "Coord.h"
 
 
@@ -14,34 +15,39 @@ Coord::Coord(const Coord &other){
 
 
 Coord& Coord::operator=(const Coord &other){
-    this->latitude = other.Latitude();
-    this->longitude = other.Longitude();
+    this->latitude = other.getLatitude();
+    this->longitude = other.getLongitude();
 
     return *this;
 }
-//!Cambiar esto
-const double& Coord::Latitude() const{
+
+double Coord::getLatitude() const{
     return latitude;
 }
 
-const double& Coord::Longitude() const{
+double Coord::getLongitude() const{
     return longitude;
 }
 
-double& Coord::Latitude(){
-    return latitude;
+void Coord::setLatitude(double lat){
+    this->latitude = lat;
 }
 
-double& Coord::Longitude(){
-    return longitude;
+void Coord::setLongitude(double lon){
+    this->longitude = lon;
 }
+
 
 Coord Coord::midpoint(const Coord &other) const{
-    return Coord((this->Latitude() + other.Latitude())/2, (this->Longitude() + other.Longitude())/2);
+    return Coord((this->getLatitude() + other.getLatitude())/2, (this->getLongitude() + other.getLongitude())/2);
+}
+
+double Coord::orientation(const Coord &other) const{
+    return atan2(other.getLongitude()-this->getLongitude(), other.getLatitude()-this->getLatitude());
 }
 
 bool Coord::operator==(const Coord &other) const{
-    return (this->Latitude() == other.Latitude() && this->Longitude() == other.Longitude());
+    return (this->getLatitude() == other.getLatitude() && this->getLongitude() == other.getLongitude());
 }
 
 
