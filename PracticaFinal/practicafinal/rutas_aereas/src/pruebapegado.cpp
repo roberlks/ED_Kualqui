@@ -1,4 +1,4 @@
-#include "imagen.h"
+#include "Image.h"
 #include <iostream>
 #include <cstdlib>
 #include <cmath>

@@ -357,7 +357,7 @@ void Pintar( int f1,int f2,int c1,int c2,Imagen &I, const Imagen &avion,int mind
  * @return Una nueva imagen que es la versión rotada de Io.
  * */
 
-Imagen Rota(const Imagen & Io,double angulo){
+Image Rota(const Imagen & Io,double angulo){
     double rads=angulo;
     double coseno = cos(angulo);
     double seno = sin(angulo);

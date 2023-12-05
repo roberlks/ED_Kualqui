@@ -18,8 +18,8 @@
   * @see LeerTipoImagen
   */
 enum TipoImagen {IMG_DESCONOCIDO, ///< Tipo de imagen desconocido
-                 IMG_PGM,         ///< Imagen tipo PGM
-                 IMG_PPM          ///< Imagen tipo PPM
+                 IMG_PGM,         ///< Image tipo PGM
+                 IMG_PPM          ///< Image tipo PPM
                 };
 
 
