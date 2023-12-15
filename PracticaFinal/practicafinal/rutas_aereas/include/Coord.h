@@ -10,15 +10,21 @@
 class Coord{
 private:
     double latitude; ///< Latitude
-    double longitude;
+    double longitude; ///< Longitude
 
 public:
+    /**
+     * @brief Constructor (by default or with @a latitude and @a longitude)
+     * @param lat Latitude
+     * @param lon Longitude
+     */
+    //! Buscar que hace esto
     explicit Coord(double lat = 0, double lon = 0);
 
-    Coord(const Coord &other);
-
-    ~Coord() = default;
-
+    /**
+     * @brief Assign content
+     * @param other  
+     */
     Coord& operator=(const Coord &other);
 
     //Getters
@@ -33,7 +39,6 @@ public:
 
     Coord midpoint(const Coord &other) const;
 
-    //! Ver como hacer esto bien
     double orientation(const Coord &other) const;
 
     bool operator==(const Coord &other) const;

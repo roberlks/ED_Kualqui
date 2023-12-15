@@ -8,12 +8,6 @@
 
 Coord::Coord(double lat, double lon) : latitude(lat), longitude(lon){}
 
-Coord::Coord(const Coord &other){
-    *this = other;
-}
-
-
-
 Coord& Coord::operator=(const Coord &other){
     this->latitude = other.getLatitude();
     this->longitude = other.getLongitude();

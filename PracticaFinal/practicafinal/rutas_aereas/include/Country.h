@@ -24,9 +24,9 @@ public:
     const std::string &getFlagPath() const;
 
     ///< Setters
-    void setName(const std::string &name);
-    void setLocation(const Coord &location);
-    void setFlagPath(const std::string &path);
+    void setName(const std::string &_name);
+    void setLocation(const Coord &_location);
+    void setFlagPath(const std::string &_path);
 
     bool operator<(const Country &C) const;
     bool operator==(const Country &C) const;

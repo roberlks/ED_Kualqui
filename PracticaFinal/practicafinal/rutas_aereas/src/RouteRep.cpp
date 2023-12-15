@@ -99,6 +99,8 @@ ostream & operator<<(RouteRep & _routeRep, std::ostream& os){
         this->it = other.it;
         return *this;
     }
+
+    // TODO: el ++ con el parametro entero es el que es preincremento
     RouteRep::const_iterator & RouteRep::const_iterator::operator++() {
         ++this->it;
         return *this;
