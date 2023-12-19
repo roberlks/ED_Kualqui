@@ -145,7 +145,7 @@ class Imagen{
     void Copiar(const Imagen &I);
 
   public:
-   Imagen();
+    Imagen();
    
    Imagen(int f,int c);
    
@@ -357,7 +357,7 @@ void Pintar( int f1,int f2,int c1,int c2,Imagen &I, const Imagen &avion,int mind
  * @return Una nueva imagen que es la versión rotada de Io.
  * */
 
-Image Rota(const Imagen & Io,double angulo){
+Imagen Rota(const Imagen & Io,double angulo){
     double rads=angulo;
     double coseno = cos(angulo);
     double seno = sin(angulo);
