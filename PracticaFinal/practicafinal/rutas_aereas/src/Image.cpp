@@ -133,15 +133,10 @@ void Image::LeerImagen(const char * nombre, const string &nombremascara){
     delete[] aux;
 }
 
-//! ???????? Esto pa que es? esta bien??
 void Image::LimpiarTransp(){
     for (int i = 0; i < nf; i++)
         for (int j = 0; j < nc; j++)
-            if (data[i][j].transp == 0){
-                data[i][j].r = 255;
-                data[i][j].g = 255;
-                data[i][j].b = 255;
-            }
+            data[i][j].transp = 255;
 }
 
 /*********************************/
