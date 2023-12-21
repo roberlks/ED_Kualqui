@@ -19,7 +19,7 @@ int main(int argc, char * argv[]){
     cout<<"7.- 0: Pegado Opaco 1: Pegado Blending"<<endl;
     return 0;
   }
-  Imagen I,Ip;
+  Image I,Ip;
   I.LeerImagen(argv[1]);
   Ip.LeerImagen(argv[2],argv[3]);
   int i,j;

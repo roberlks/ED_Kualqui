@@ -94,7 +94,7 @@ void Image::LeerImagen(const char * nombre, const string &nombremascara){
     }
 
     *this = I;
-    if (aux_mask != 0) delete[] aux_mask;
+    delete[] aux_mask;
     delete[] aux;
 }
 
