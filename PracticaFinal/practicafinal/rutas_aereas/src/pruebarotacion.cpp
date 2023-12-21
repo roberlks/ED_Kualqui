@@ -4,7 +4,7 @@
 #include <cmath>
 using namespace std;
 
-Imagen Rota(const Imagen & Io,double angulo){
+Image Rota(const Image & Io,double angulo){
     double rads=angulo;
     double coseno = cos(angulo);
     double seno = sin(angulo);
@@ -46,7 +46,7 @@ Imagen Rota(const Imagen & Io,double angulo){
     newimgrows=(unsigned)ceil((double)new_row_max-new_row_min);
     newimgcols=(unsigned)ceil((double)new_col_max-new_col_min);
    
-    Imagen Iout(newimgrows,newimgcols);
+    Image Iout(newimgrows,newimgcols);
     for(int rows=0;rows<newimgrows;rows++)
       {
 	for(int cols=0;cols<newimgcols;cols++)
@@ -83,11 +83,11 @@ int main(int argc, char * argv[]){
     cout<<"3.-El nombre de la imagen de salida"<<endl;
     return 0;
   }
-  Imagen I;
+  Image I;
   I.LeerImagen(argv[1]);
   double angulo=atof(argv[2]);
   angulo = angulo*(M_PI)/180;
-  Imagen Iout=Rota(I,angulo);
+  Image Iout=Rota(I,angulo);
   Iout.EscribirImagen(argv[3]);
   
 }  

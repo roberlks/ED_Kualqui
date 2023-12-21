@@ -1,11 +1,21 @@
-//
-// Created by uwu on 27/11/23.
-//
+/**
+ * @file Country.cpp
+ * @brief Implementation of the Country class.
+ *
+ * This file contains the implementation of the Country class, which represents a country
+ * with its name, geographic location, and a path to its flag image. It includes methods
+ * for setting and getting country attributes, comparing countries, and overloading
+ * input/output operators for stream interactions.
+ *
+ * @authors Roberto González, Irina Kuzyshyn
+ */
 
 #include "Country.h"
+
+#include <utility>
 using namespace std;
 
-explicit Country::Country(const std::string &_name = "", const Coord &loc = Coord(), const std::string path = "") : name(_name), location(loc), flag_path(path) {}
+Country::Country(std::string _name, const Coord &loc, std::string  path) : name(std::move(_name)), location(loc), flag_path(std::move(path)) {}
 
 Country::Country(const Country &other){
     *this = other;
@@ -48,7 +58,11 @@ bool Country::operator<(const Country &C) const{
 }
 
 bool Country::operator==(const Country &C) const{
-    return *this == C;
+    bool equal = true;
+    equal &= this->getName() == C.getName();
+    equal &= this->getLocation() == C.getLocation();
+    equal &= this->getFlagPath() == C.getFlagPath();
+    return equal;
 }
 
 bool Country::operator==(const Coord &point) const{

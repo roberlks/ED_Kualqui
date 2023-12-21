@@ -1,7 +1,12 @@
 /**
  * @file RouteRep.cpp
- * @brief Implementation of the RouteRep class
+ * @brief Implementation of the RouteRep class.
  *
+ * This file contains the implementation of the RouteRep class, which is used to store and manage multiple routes.
+ * It includes methods for constructing route repositories from different sources (such as maps, lists, or files),
+ * accessing and modifying route data, and providing iterator functionalities for traversing through the routes.
+ *
+ * @author Roberto González, Irina Kuzyshyn
  */
 
 #include "RouteRep.h"
@@ -100,7 +105,6 @@ ostream & operator<<(RouteRep & _routeRep, std::ostream& os){
         return *this;
     }
 
-    // TODO: el ++ con el parametro entero es el que es preincremento
     RouteRep::const_iterator & RouteRep::const_iterator::operator++() {
         ++this->it;
         return *this;

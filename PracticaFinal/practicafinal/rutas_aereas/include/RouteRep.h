@@ -1,8 +1,15 @@
 /**
  * @file RouteRep.h
- * @brief Representation of an storage of routes.
+ * @brief Header file for the RouteRep class.
  *
+ * This file declares the RouteRep class, which is used for storing and managing multiple routes.
+ * The class facilitates operations like constructing routes from different sources (such as lists or files),
+ * iterating over routes, and managing route data. It includes nested iterator and const_iterator classes
+ * for iterating through the routes.
+ *
+ * @authors Roberto González, Irina Kuzyshyn
  */
+
 #ifndef PRACTICAFINAL_ROUTEREP_H
 #define PRACTICAFINAL_ROUTEREP_H
 

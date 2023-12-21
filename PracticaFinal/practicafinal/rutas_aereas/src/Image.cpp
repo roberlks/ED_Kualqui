@@ -1,8 +1,21 @@
+/**
+ * @file Image.cpp
+ * @brief Implementation of the Image class.
+ *
+ * This file contains the implementation of the Image class, which provides functionalities for
+ * image manipulation. This includes constructing images, copying them, handling pixel data,
+ * reading and writing images to files, and performing operations like clearing transparency,
+ * overlaying images, and extracting sub-images.
+ *
+ * @author Roberto González, Irina Kuzyshyn
+ */
+
 #include "Image.h"
 #include "imagenES.h"
 #include <cassert>
 
 using namespace std;
+
 
 Image::Image(int f, int c){
     nf = f;
@@ -19,7 +32,28 @@ Image::Image(int f, int c){
     }
 }
 
+Image::Image(const Image &I) {
+    Copiar(I);
+}
+
+Image::~Image() {
+    Borrar();
+}
+
+Image & Image::operator=(const Image &I) {
+    if (this != &I){
+        Borrar();
+        Copiar(I);
+    }
+    return *this;
+}
+
 /**********************************************/
+
+ Pixel & Image::operator()(int i, int j) {
+    assert(i >= 0 && i < nf && j >= 0 && j < nc);
+    return data[i][j];
+}
 const Pixel & Image::operator()(int i, int j) const {
     assert(i >= 0 && i < nf && j >= 0 && j < nc);
     return data[i][j];
@@ -60,6 +94,7 @@ void Image::EscribirImagen(const char * nombre){
     delete[] m;
 }
 
+
 /*********************************/
 void Image::LeerImagen(const char * nombre, const string &nombremascara){
     int f, c;
@@ -98,6 +133,17 @@ void Image::LeerImagen(const char * nombre, const string &nombremascara){
     delete[] aux;
 }
 
+//! ???????? Esto pa que es? esta bien??
+void Image::LimpiarTransp(){
+    for (int i = 0; i < nf; i++)
+        for (int j = 0; j < nc; j++)
+            if (data[i][j].transp == 0){
+                data[i][j].r = 255;
+                data[i][j].g = 255;
+                data[i][j].b = 255;
+            }
+}
+
 /*********************************/
 
 void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado){
@@ -117,3 +163,36 @@ void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado)
                 }
             }
 }
+
+
+
+Image Image::ExtraeImagen(int posi, int posj, int dimi, int dimj) {
+    Image I(dimi, dimj);
+    for (int i = 0; i < dimi; i++)
+        for (int j = 0; j < dimj; j++)
+            if (i + posi >= 0 && i + posi < nf && j + posj >= 0 && j + posj < nc){
+                I.data[i][j] = data[i + posi][j + posj];
+            }
+    return I;
+}
+
+
+
+// Private
+void Image::Borrar(){
+    for (int i = 0; i < nf; i++)
+        delete[] data[i];
+    delete[] data;
+}
+void Image::Copiar(const Image &I) {
+    nf = I.nf;
+    nc = I.nc;
+    data = new Pixel*[nf];
+    for (int i = 0; i < nf; i++){
+        data[i] = new Pixel[nc];
+        for (int j = 0; j < nc; j++){
+            data[i][j] = I.data[i][j];
+        }
+    }
+}
+

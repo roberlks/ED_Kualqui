@@ -1,6 +1,15 @@
-//
-// Created by uwu on 27/11/23.
-//
+/**
+ * @file Countries.cpp
+ * @brief Implementation of the Countries class.
+ *
+ * This file contains the implementation of the Countries class, which manages a collection of Country objects.
+ * It includes methods for adding and removing countries, finding countries by their attributes,
+ * and overloading input/output operators to interact with streams.
+ * The file also implements iterator functionalities to traverse through the collection.
+ *
+ * @authors Roberto González, Irina Kuzyshyn
+ */
+
 
 #include <string>
 #include "Countries.h"
@@ -14,11 +23,7 @@ Countries::Countries(const Countries &other){
     *this = other;
 }
 
-Countries & Countries::operator=(const Countries &other){
-    this->countries = other.countries;
-
-    return *this;
-}
+Countries & Countries::operator=(const Countries &other)= default;
 
 void Countries::insert(const Country &country){
     countries.insert(country);

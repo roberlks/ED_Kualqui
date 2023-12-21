@@ -1,3 +1,16 @@
+/**
+ * @file Route.h
+ * @brief Header file for the Route class.
+ *
+ * This file declares the Route class, which is used for representing a travel route.
+ * The class contains functionalities for managing a route, including its identification and
+ * points of interest (represented as Coord objects). It supports operations like
+ * adding and removing points of interest, setting and getting route details, and
+ * outputting route information.
+ *
+ * @authors Roberto González, Irina Kuzyshyn
+ */
+
 #ifndef PRACTICAFINAL_ROUTE_H
 #define PRACTICAFINAL_ROUTE_H
 

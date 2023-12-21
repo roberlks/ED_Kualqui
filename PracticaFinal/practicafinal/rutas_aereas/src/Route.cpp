@@ -1,7 +1,12 @@
 /**
  * @file Route.cpp
- * @brief Implementación de la clase Route
+ * @brief Implementation of the Route class.
  *
+ * This file contains the implementation of the Route class, which is used for representing
+ * a travel route. It includes functionalities for managing a route's identification and
+ * points of interest, as well as operations for adding, removing, and outputting route information.
+ *
+ * @author Roberto González, Irina Kuzyshyn
  */
 
 #include "Route.h"

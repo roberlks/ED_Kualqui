@@ -1,10 +1,17 @@
-//
-// Created by uwu on 27/11/23.
-//
+/**
+ * @file Coord.cpp
+ * @brief Implementation of the Coord class.
+ *
+ * This file contains the implementation of the Coord class, which is used to represent
+ * and manipulate geographic coordinates. The class provides methods for setting and getting
+ * latitude and longitude, calculating midpoints and orientations, and overloading operators
+ * for comparison and input/output operations.
+ *
+ * @authors Roberto González, Irina Kuzyshyn
+ */
 
 #include <cmath>
 #include "Coord.h"
-
 
 Coord::Coord(double lat, double lon) : latitude(lat), longitude(lon){}
 
