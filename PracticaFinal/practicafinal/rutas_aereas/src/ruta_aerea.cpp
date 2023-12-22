@@ -22,7 +22,7 @@ void posInImage(double &row, double &col, const Image &I, const Coord &loc){
 }
 
 void paintFlag(const Countries &countries, const Coord &loc, const string &dir_flags, Image &world){
-    Countries::const_iterator it_country = countries.find(*it);
+    Countries::const_iterator it_country = countries.find(loc);
     if (it_country != countries.cend()){
         // Imprimo el pais por pantalla
         cout << (*it_country).getName() << " ";
@@ -65,7 +65,7 @@ int main(int argc, char **argv){
     //f.close();
     //f.open(argv[4]);
     //f >> rr;
-
+    
     cout << "Las rutas son:" << endl << rr << endl;
 
     cout << "Dime el código de una ruta: ";
@@ -116,6 +116,8 @@ int main(int argc, char **argv){
     world.PutImagen(row_plane, col_plane, rotated_plane, BLENDING);
 
     paintFlag(countries, *it, dir_flags, world);
+
+    cout << endl;
 
     world.EscribirImagen(RESULTADO);
 
