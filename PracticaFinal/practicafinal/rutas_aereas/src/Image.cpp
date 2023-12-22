@@ -239,8 +239,10 @@ Image Image::Rota(double angulo) const
             {
                 Iout(rows, cols) = (*this)(old_row, old_col);
             }
-            else
+            else{
                 Iout(rows, cols).r = Iout(rows, cols).g = Iout(rows, cols).b = 255;
+                Iout(rows, cols).transp = 0;
+            }
         }
     }
     return Iout;

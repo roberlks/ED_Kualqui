@@ -104,10 +104,10 @@ int main(int argc, char **argv)
     Image plane;
     plane.LeerImagen(argv[5], argv[6]);
 
-    RouteRep rr(argv[4]);
-    // f.close();
-    // f.open(argv[4]);
-    // f >> rr;
+    RouteRep rr/*(argv[4])*/;
+    f.close();
+    f.open(argv[4]);
+    f >> rr;
 
     cout << "Las rutas son:" << endl
          << rr << endl;
