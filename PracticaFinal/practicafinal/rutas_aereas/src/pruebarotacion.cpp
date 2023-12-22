@@ -10,7 +10,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    if (argc != 4)
+    if (argc != 5)
     {
         cout << "Los parametros son :" << endl;
         cout << "1.-La imagen de entrada" << endl;
@@ -19,7 +19,7 @@ int main(int argc, char *argv[])
         return 0;
     }
     Image I;
-    I.LeerImagen(argv[1]);
+    I.LeerImagen(argv[1], argv[4]);
     double angulo = atof(argv[2]);
     angulo = angulo * (M_PI) / 180;
     Image Iout = I.Rota(angulo);
