@@ -34,6 +34,10 @@ void Route::setPois(const std::list<Coord>& _pois) {
     this->pois = _pois;
 }
 
+void Route::addPoi(const Coord & poi){
+    this->pois.push_back(poi);
+}
+
 void Route::addPois(const std::list<Coord>& _pois) {
     this->pois.insert(this->pois.end(), _pois.begin(), _pois.end());
 }
@@ -52,3 +56,17 @@ std::ostream & operator<<(std::ostream & os, const Route &R){
     return os;
 }
 
+istream & operator>>(istream & is, Route & R){
+    is >> R.id;
+    int n_pois;
+    is >> n_pois;
+
+    for (int i = 0; i < n_pois; i++){
+        Coord poi;
+        is >> poi;
+
+        R.addPoi(poi);
+    }
+
+    return is;
+}

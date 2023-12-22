@@ -68,7 +68,7 @@ public:
      * @note If the route object already has data, it will be appended to the end.
      */
     friend std::istream & operator>>(std::istream& is, RouteRep& _routeRep);
-    friend std::ostream & operator <<(RouteRep& _routeRep, std::ostream& os);
+    friend std::ostream & operator <<(std::ostream& os,RouteRep& _routeRep);
 
     /**
      * @brief iterator class

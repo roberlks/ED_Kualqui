@@ -146,6 +146,9 @@ public:
      * @return Extracted sub-image.
      */
     Image ExtraeImagen(int posi, int posj, int dimi, int dimj);
+
+    //! Comentar esto
+    Image Rota(double angulo);
 };
 
 #endif //PRACTICAFINAL_IMAGE_H

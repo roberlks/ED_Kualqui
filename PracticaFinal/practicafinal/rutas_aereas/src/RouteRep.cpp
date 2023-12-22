@@ -39,25 +39,17 @@ const Route& RouteRep::getRoute(std::string id) const {
 }
 
 istream & operator>>(std::istream &is, RouteRep &_routeRep) {
-    string id;
+    string id, aux;
+    is >> aux;
     while(!is.eof()){
-        int n_pois;
-        double lat, lon;
-        list<Coord> pois_route;
-
-        is>>id>>n_pois;
-        for(int i = 0; i < n_pois; i++){
-            Coord poi;
-            is>>poi;
-            pois_route.emplace_back(poi);
-        }
-        // ADD_ROUTE
-        _routeRep.routes.insert(pair<string,Route>(id,Route(id,pois_route)));
+        Route r; 
+        is >> r;
+        _routeRep.routes.insert(pair<string,Route>(r.getId(), r));
     }
     return is;
 }
 
-ostream & operator<<(RouteRep & _routeRep, std::ostream& os){
+ostream & operator<<(std::ostream& os, RouteRep & _routeRep){
     for (RouteRep::iterator it = _routeRep.begin(); it != _routeRep.end(); ++it) {
         os << (*it) << endl; ///> Route::operator<<
     }
