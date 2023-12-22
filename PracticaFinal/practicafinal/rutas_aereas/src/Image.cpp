@@ -155,7 +155,7 @@ void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado)
             if (i + posi - media_altura >= 0 && i + posi - media_altura < nf && j + posj - media_anchura >= 0 && j + posj - media_anchura < nc){
                 if (I.data[i][j].transp != 0){
                     if (tippegado == OPACO)
-                        data[i + posi][j + posj] = I.data[i][j];
+                        data[i + posi-media_altura][j + posj- media_anchura] = I.data[i][j];
                     else{
                         data[i + posi - media_altura][j + posj - media_anchura].r = (data[i + posi - media_altura][j + posj - media_anchura].r + I.data[i][j].r) / 2;
                         data[i + posi - media_altura][j + posj - media_anchura].g = (data[i + posi - media_altura][j + posj - media_anchura].g + I.data[i][j].g) / 2;

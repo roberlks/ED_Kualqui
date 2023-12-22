@@ -55,7 +55,7 @@ void Pintar(int f1, int f2, int c1, int c2, Image &I, const Image &avion, int mi
         
         angulo = atan2((fila - f1), (col - c1));
         Irota = avion.Rota(angulo);
-
+        cout << f1 << " " << c1 << endl;
         I.PutImagen(f1, c1, Irota, OPACO); // pensar si debe ser opaco o blending
         
     }
@@ -75,6 +75,7 @@ void paintFlag(const Countries &countries, const Coord &loc, const string &dir_f
 
         double row, col;
         posInImage(row, col, world, loc);
+        cout << row << " " << col << endl;
         world.PutImagen(row, col, flag, BLENDING);
     }
 }
