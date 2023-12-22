@@ -56,7 +56,14 @@ public:
      */
     void setPois(const std::list<Coord>& pois);
 
-    //!Comentar
+    /**
+     * @brief Adds a single point of interest to the route.
+     *
+     * This method appends a new point of interest (represented by a Coord object) to the route.
+     * It effectively adds a new destination or waypoint to the route.
+     *
+     * @param poi The point of interest to be added to the route.
+     */
 
     void addPoi(const Coord & poi);
 
