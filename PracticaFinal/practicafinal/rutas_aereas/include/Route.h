@@ -223,25 +223,25 @@ public:
         friend class Route;
     };
 
-    /*
+    /**
      * @brief Get an iterator to the beginning of the list of points of interest
      * @return iterator
      */
     iterator begin();
 
-    /*
+    /**
      * @brief Get an iterator to the end of the list of points of interest
      * @return iterator
      */
     iterator end();
 
-    /*
+    /**
      * @brief Get a const_iterator to the beginning of the list of points of interest
      * @return const_iterator
      */
     const_iterator begin() const;
 
-    /*
+    /**
      * @brief Get a const_iterator to the end of the list of points of interest
      * @return const_iterator
      */
