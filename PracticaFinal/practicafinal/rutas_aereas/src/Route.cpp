@@ -61,8 +61,8 @@ istream & operator>>(istream & is, Route & R){
     int n_pois;
     is >> n_pois;
 
+    Coord poi;
     for (int i = 0; i < n_pois; i++){
-        Coord poi;
         is >> poi;
 
         R.addPoi(poi);

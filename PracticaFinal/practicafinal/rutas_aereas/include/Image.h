@@ -146,8 +146,16 @@ public:
      * @return Extracted sub-image.
      */
     Image ExtraeImagen(int posi, int posj, int dimi, int dimj);
-
-    //! Comentar esto
+    /**
+     * @brief Rotates the image by a specified angle.
+     *
+     * This function rotates the current image by a given angle (in radians), first calculating the new dimensions
+     * of the resulting image to avoid information loss. The rotation is performed around the image's coordinate origin,
+     * and the image content is adjusted to keep all pixels within the bounds of the new image.
+     *
+     * @param angulo The angle of rotation in radians. Positive values indicate counterclockwise rotation.
+     * @return A new image that is the rotated version of the original image.
+     */
     Image Rota(double angulo) const;
 };
 
