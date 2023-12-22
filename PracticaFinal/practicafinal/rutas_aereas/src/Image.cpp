@@ -103,7 +103,7 @@ void Image::LeerImagen(const char * nombre, const string &nombremascara){
     LeerTipoImagen(nombre, f, c);
     aux = new unsigned char[f * c * 3];
     LeerImagenPPM(nombre, f, c, aux);
-    if (nombremascara != ""){
+    if (!nombremascara.empty()){
         int fm, cm;
         LeerTipoImagen(nombremascara.c_str(), fm, cm);
         aux_mask = new unsigned char[fm * cm];
