@@ -52,3 +52,15 @@ Cada clase tiene un propósito específico y bien definido, lo que contribuye a 
 limpio y mantenible. Al mismo tiempo, la interacción entre estas clases permite una
 representación integral y detallada de rutas aéreas a nivel mundial.
 */
+
+# Ejemplo de Ejecución
+El resultado de ejecutar el main (ruta_aerea) Utilizando la Ruta 1 del almacen de rutas por defecto, es decir, la ruta
+R1 5 (34.520418555522845,69.20082090000005) (52.50786264022465,13.426141949999987)
+(7.406652727545182,12.344585699999925) (-0.18659558628491132,-78.4305382) (40.40051528912146,-3.5916460749999635)
+O lo que es lo mismo: "Afganistan Alemania Camerun Ecuador España"
+(Utilizando el avion 1 y el mapa 1) es:
+\image html EjemploDeUso.png "Ruta 1, avion 1, mapa 1"
+\image latex EjemploDeUso.png "Ruta 1, avion 1, mapa 1" width=10cm
+La forma de llamada al programa para dicho ejemplo es:
+$ ./cmake-build-debug/ruta_aerea ./datos/paises.txt .
+  /datos/imagenes/mapas/mapa1.ppm ./datos/imagenes/banderas/ ./datos/almacen_rutas.txt ./datos/imagenes/aviones/avion1.ppm ./datos/imagenes/aviones/mascara_avion1.pgm

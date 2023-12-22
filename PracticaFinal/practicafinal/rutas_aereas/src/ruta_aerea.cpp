@@ -7,7 +7,7 @@
 
 using namespace std;
 
-#define RESULTADO "./datos/pruebas/resultado_final.ppm"
+#define RESULTADO "./resultado_final.ppm"
 
 /**
  * @brief Calculate the position of a coordinate on a Image

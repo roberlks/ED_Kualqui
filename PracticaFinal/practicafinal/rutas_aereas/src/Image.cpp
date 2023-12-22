@@ -163,22 +163,6 @@ void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado)
                     }
                 }
             }
-
-
-
-    /*for (int i = 0; i < I.nf; i++)
-        for (int j = 0; j < I.nc; j++)
-            if (i + posi >= 0 && i + posi < nf && j + posj >= 0 && j + posj < nc){
-                if (I.data[i][j].transp != 0){
-                    if (tippegado == OPACO)
-                        data[i + posi][j + posj] = I.data[i][j];
-                    else{
-                        data[i + posi][j + posj].r = (data[i + posi][j + posj].r + I.data[i][j].r) / 2;
-                        data[i + posi][j + posj].g = (data[i + posi][j + posj].g + I.data[i][j].g) / 2;
-                        data[i + posi][j + posj].b = (data[i + posi][j + posj].b + I.data[i][j].b) / 2;
-                    }
-                }
-            }*/
 }
 
 
