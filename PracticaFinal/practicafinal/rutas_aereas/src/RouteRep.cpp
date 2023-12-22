@@ -25,6 +25,7 @@ RouteRep::RouteRep(const list<Route>& _routes){
 RouteRep::RouteRep(char* file) {
     ifstream ifs;
     ifs.open(file);
+    cout << "Reading routes from file " << file << endl;
     ifs >> *this;
 }
 
@@ -41,11 +42,14 @@ const Route& RouteRep::getRoute(std::string id) const {
 istream & operator>>(std::istream &is, RouteRep &_routeRep) {
     string id, aux;
     is >> aux;
+    cout << "Reading routes from file " << aux << endl;
     while(!is.eof()){
-        Route r; 
+        Route r;
         is >> r;
         _routeRep.routes.insert(pair<string,Route>(r.getId(), r));
+        cout << "Route " << r.getId() << " read" << endl;
     }
+    cout << "Routes read" << endl;
     return is;
 }
 

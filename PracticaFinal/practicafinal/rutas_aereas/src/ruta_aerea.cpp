@@ -98,16 +98,23 @@ int main(int argc, char **argv)
     ifstream f(argv[1]);
     f >> countries;
 
+    cout << "Paises Leidos" << endl;
+
     Image world;
     world.LeerImagen(argv[2]);
+    cout << "Imagen world Leida" << endl;
 
     Image plane;
     plane.LeerImagen(argv[5], argv[6]);
+
+    cout << "Imagen plane Leida" << endl;
 
     RouteRep rr(argv[4]);
     // f.close();
     // f.open(argv[4]);
     // f >> rr;
+
+    cout << "RouteRep rr Leido" << endl;
 
     cout << "Las rutas son:" << endl
          << rr << endl;
@@ -166,7 +173,11 @@ int main(int argc, char **argv)
 
     cout << endl;
 
+    cout << "Caluclos done" << endl;
+
     world.EscribirImagen(RESULTADO);
+
+    cout << "Escrito en: " << RESULTADO << endl;
 
     return 0;
 }
