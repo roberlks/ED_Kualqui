@@ -43,6 +43,9 @@ const Route &RouteRep::getRoute(std::string id) const
 
 istream &operator>>(std::istream &is, RouteRep &_routeRep)
 {
+
+    //We dont do it using the >> from routes cause it causes inestability when checking for EOF
+    
     string id, aux;
     is >> aux;
     Route r;
