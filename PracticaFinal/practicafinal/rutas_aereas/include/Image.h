@@ -148,7 +148,7 @@ public:
     Image ExtraeImagen(int posi, int posj, int dimi, int dimj);
 
     //! Comentar esto
-    Image Rota(double angulo);
+    Image Rota(double angulo) const;
 };
 
 #endif //PRACTICAFINAL_IMAGE_H

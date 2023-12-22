@@ -53,6 +53,8 @@ ostream & operator<<(std::ostream& os, RouteRep & _routeRep){
     for (RouteRep::iterator it = _routeRep.begin(); it != _routeRep.end(); ++it) {
         os << (*it) << endl; ///> Route::operator<<
     }
+
+    return os;
 }
 
 //Iterator{
