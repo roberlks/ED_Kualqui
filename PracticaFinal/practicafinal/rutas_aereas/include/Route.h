@@ -56,6 +56,10 @@ public:
      */
     void setPois(const std::list<Coord>& pois);
 
+    //!Comentar
+
+    void addPoi(const Coord & poi);
+
     /**
      * @brief Add points of interest (Coord objects) to the route
      * @param pois The list of points of interest to add
@@ -68,7 +72,12 @@ public:
      */
     void removePois(const std::list<Coord>& _pois);
 
+
+    class const_iterator;
+    class iterator;
+
     friend std::ostream & operator<<(std::ostream & os, const Route &R);
+    friend std::istream & operator>>(std::istream & is, Route &R);
 };
 
 #endif //PRACTICAFINAL_ROUTE_H
