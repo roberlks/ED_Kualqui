@@ -51,7 +51,7 @@ y tipos de rutas.
 Cada clase tiene un propósito específico y bien definido, lo que contribuye a un código más
 limpio y mantenible. Al mismo tiempo, la interacción entre estas clases permite una
 representación integral y detallada de rutas aéreas a nivel mundial.
-*/
+
 
 # Ejemplo de Ejecución
 El resultado de ejecutar el main (ruta_aerea) Utilizando la Ruta 1 del almacen de rutas por defecto, es decir, la ruta
@@ -64,3 +64,4 @@ O lo que es lo mismo: "Afganistan Alemania Camerun Ecuador España"
 La forma de llamada al programa para dicho ejemplo es:
 $ ./cmake-build-debug/ruta_aerea ./datos/paises.txt .
   /datos/imagenes/mapas/mapa1.ppm ./datos/imagenes/banderas/ ./datos/almacen_rutas.txt ./datos/imagenes/aviones/avion1.ppm ./datos/imagenes/aviones/mascara_avion1.pgm
+*/
