@@ -57,10 +57,7 @@ ostream & operator<<(std::ostream& os, RouteRep & _routeRep){
 
 //Iterator{
     RouteRep::iterator::iterator(const std::map<std::string, Route>::iterator &_it) {this->it = _it;}
-    RouteRep::iterator & RouteRep::iterator::operator=(const RouteRep::iterator &other) {
-        this->it = other.it;
-        return *this;
-    }
+    RouteRep::iterator & RouteRep::iterator::operator=(const RouteRep::iterator &other) = default;
     RouteRep::iterator & RouteRep::iterator::operator++() {
         ++this->it;
         return *this;

@@ -70,3 +70,87 @@ istream & operator>>(istream & is, Route & R){
 
     return is;
 }
+
+
+
+//Iterator{
+    Route::iterator::iterator(const std::list<Coord>::iterator &_it) {this->it = _it;}
+    Route::iterator & Route::iterator::operator=(const Route::iterator &other) {
+        this->it = other.it;
+        return *this;
+    }
+    Route::iterator & Route::iterator::operator++() {
+        ++this->it;
+        return *this;
+    }
+    const Route::iterator Route::iterator::operator++(int) {
+        Route::iterator tmp(*this);
+        ++this->it;
+        return tmp;
+    }
+    Route::iterator & Route::iterator::operator--() {
+        --this->it;
+        return *this;
+    }
+    const Route::iterator Route::iterator::operator--(int) {
+        Route::iterator tmp(*this);
+        --this->it;
+        return tmp;
+    }
+    bool Route::iterator::operator==(const Route::iterator &other) const {
+        return this->it == other.it;
+    }
+    bool Route::iterator::operator!=(const Route::iterator &other) const {
+        return this->it != other.it;
+    }
+    Coord & Route::iterator::operator*() {
+        return *this->it;
+    }
+//}
+// Const_iterator{
+    Route::const_iterator::const_iterator(const std::list<Coord>::const_iterator &_it) {this->it = _it;}
+    Route::const_iterator & Route::const_iterator::operator=(const Route::const_iterator &other) = default;
+
+    Route::const_iterator & Route::const_iterator::operator++() {
+        ++this->it;
+        return *this;
+    }
+    Route::const_iterator Route::const_iterator::operator++(int) {
+        Route::const_iterator tmp(*this);
+        ++this->it;
+        return tmp;
+    }
+    Route::const_iterator & Route::const_iterator::operator--() {
+        --this->it;
+        return *this;
+    }
+    Route::const_iterator Route::const_iterator::operator--(int) {
+        Route::const_iterator tmp(*this);
+        --this->it;
+        return tmp;
+    }
+    bool Route::const_iterator::operator==(const Route::const_iterator &other) const {
+        return this->it == other.it;
+    }
+    bool Route::const_iterator::operator!=(const Route::const_iterator &other) const {
+        return this->it != other.it;
+    }
+
+    const Coord &Route::const_iterator::operator*() const {
+        return *this->it;
+    }
+//}
+
+//Iterator methods
+Route::iterator Route::begin() {
+    return Route::iterator(this->pois.begin());
+}
+Route::iterator Route::end(){
+    return Route::iterator(this->pois.end());
+}
+Route::const_iterator Route::begin() const {
+    return Route::const_iterator(this->pois.begin());
+}
+Route::const_iterator Route::end() const {
+    return Route::const_iterator(this->pois.end());
+}
