@@ -147,8 +147,26 @@ void Image::LimpiarTransp(){
 
 void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado){
     //assert(nf>=posi+I.nf && nc>=posj+I.nc);
+    int media_altura = I.num_filas()/2;
+    int media_anchura = I.num_cols()/2;
 
     for (int i = 0; i < I.nf; i++)
+        for (int j = 0; j < I.nc; j++)
+            if (i + posi - media_altura >= 0 && i + posi - media_altura < nf && j + posj - media_anchura >= 0 && j + posj - media_anchura < nc){
+                if (I.data[i][j].transp != 0){
+                    if (tippegado == OPACO)
+                        data[i + posi][j + posj] = I.data[i][j];
+                    else{
+                        data[i + posi - media_altura][j + posj - media_anchura].r = (data[i + posi - media_altura][j + posj - media_anchura].r + I.data[i][j].r) / 2;
+                        data[i + posi - media_altura][j + posj - media_anchura].g = (data[i + posi - media_altura][j + posj - media_anchura].g + I.data[i][j].g) / 2;
+                        data[i + posi - media_altura][j + posj - media_anchura].b = (data[i + posi - media_altura][j + posj - media_anchura].b + I.data[i][j].b) / 2;
+                    }
+                }
+            }
+
+
+
+    /*for (int i = 0; i < I.nf; i++)
         for (int j = 0; j < I.nc; j++)
             if (i + posi >= 0 && i + posi < nf && j + posj >= 0 && j + posj < nc){
                 if (I.data[i][j].transp != 0){
@@ -156,11 +174,11 @@ void Image::PutImagen(int posi, int posj, const Image &I, Tipo_Pegado tippegado)
                         data[i + posi][j + posj] = I.data[i][j];
                     else{
                         data[i + posi][j + posj].r = (data[i + posi][j + posj].r + I.data[i][j].r) / 2;
-                        data[i + posi][j + posj].g = (data[i + posi][j + posj].r + I.data[i][j].g) / 2;
-                        data[i + posi][j + posj].b = (data[i + posi][j + posj].r + I.data[i][j].b) / 2;
+                        data[i + posi][j + posj].g = (data[i + posi][j + posj].g + I.data[i][j].g) / 2;
+                        data[i + posi][j + posj].b = (data[i + posi][j + posj].b + I.data[i][j].b) / 2;
                     }
                 }
-            }
+            }*/
 }
 
 

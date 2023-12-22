@@ -51,7 +51,7 @@ void Pintar(int f1, int f2, int c1, int c2, Image &I, const Image &avion, int mi
         angulo = atan2((f2 - fila), (c2 - col));
         Irota = avion.Rota(angulo);
 
-        //I.PutImagen(f2, c2, Irota, OPACO); // pensar si debe ser opaco o blending
+        I.PutImagen(f2, c2, Irota, OPACO); // pensar si debe ser opaco o blending
         
         angulo = atan2((fila - f1), (col - c1));
         Irota = avion.Rota(angulo);
@@ -104,7 +104,7 @@ int main(int argc, char **argv)
     Image plane;
     plane.LeerImagen(argv[5], argv[6]);
 
-    RouteRep rr/*(argv[4])*/;
+    RouteRep rr;
     f.close();
     f.open(argv[4]);
     f >> rr;
@@ -160,7 +160,8 @@ int main(int argc, char **argv)
     double col_plane, row_plane;
     posInImage(row_plane, col_plane, world, *it);
 
-    world.PutImagen(row_plane, col_plane, rotated_plane, BLENDING);
+    //world.PutImagen(row_plane, col_plane, rotated_plane, BLENDING);
+
 
     paintFlag(countries, *it, dir_flags, world);
 
